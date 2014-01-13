@@ -1,0 +1,85 @@
+@(title: String)(content: Html)(implicit lang: Lang)
+
+@import play.api.i18n._
+@import models._
+@import play.api.Logger
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>@title</title>
+    <link rel='shortcut icon' type='image/png' href='@routes.Assets.at("images/favicon.png")'>
+    <link rel='stylesheet' href='@routes.Assets.at("stylesheets/bootstrap.css")'>
+    <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src='@routes.Assets.at("javascripts/bootstrap.min.js")'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIo1FKI9xqFQl7M7dUR_Ds7ZDXt3RrWT4&sensor=true"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            @common.map(List(UtilObject.ancoraCoord))
+        </div>
+        <!-- header -->
+        <div class="row">
+            <div class="hidden-xs dark-bgd clearfix header col-xs-12">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <ul class="social_panel">
+                            <li>
+                                <a href="@routes.Application.contacts">
+                                    <span class="social_icon" id="facebook_icon"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@routes.Application.contacts">
+                                    <span class="social_icon" id="skype_icon"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-4 text-center">
+                        <a href="javascript: showTopMap();">
+                            <span class="map_icon"></span>
+                        </a>
+                    </div>
+
+                    <div class="btn-group col-xs-4 pull-right">
+                        <button type="button" class="btn btn-dark dropdown-toggle pull-right" data-toggle="dropdown">
+                            @Messages("nav.languages")
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href='@routes.Application.language("en")'>English</a>
+                            </li>
+                            <li>
+                                <a href='@routes.Application.language("it")'>Italiano</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end header -->
+        <div class="row">
+            <div class="title-wrapper col-xs-12 text-center">
+                <div class="dec dec-left"></div>
+                <span class="page-header">HOTEL ANCORA</span>
+                <div class="dec dec-right"></div>
+                <h4>@Messages("home.subtitle", lang)</h4>
+            </div>
+        </div>
+        @common.navbar()
+        <!-- collpase -->
+        @content
+        <!-- footer -->@common.footer()</div>
+</body>
+
+</html>

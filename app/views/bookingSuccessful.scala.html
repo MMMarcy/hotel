@@ -1,0 +1,15 @@
+@()(implicit lang: Lang)
+
+@import play.api.i18n._
+
+@main(Messages("home.title")) {
+<div class="row">
+	<div class="col-xs-12 box">
+		<h3>@Messages("operation.successful-title")</h3>
+		<span></span>
+
+		<div>@Messages("operation.successful")</div>
+		<div class="margined">@Messages("operation.footer")</div>
+	</div>
+</div>
+}

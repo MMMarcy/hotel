@@ -1,0 +1,69 @@
+@(room: models.RoomType.Value)(implicit lang: Lang)
+
+@import play.api.i18n._
+@import org.joda.time.MonthDay
+@import models._
+@import models.RoomType._
+@import models.Treatment._
+@import common._
+@import entities.Prenotation
+
+<div class="row margined">
+	<div class="col-md-12">
+		<div class="col-md-12 dark-bgd">
+			<div class="row">
+				<div class="col-md-3 price-container text-center">
+					from <span id="priceLabel">@PriceObject.map(room)(Treatment.bb)(new MonthDay())</span>€
+					<p>Per night per person</p>
+					<div class="price-corner tl"></div>
+					<div class="price-corner tr"></div>
+					<div class="price-corner bl"></div>
+					<div class="price-corner br"></div>
+				</div>
+				<div class="col-md-8 margined">
+					<form action="@routes.Application.sendEmail" method="POST">	
+						<input type="hidden" name="@Prenotation.roomSTR" value="@room.toString">
+						<input type="email" autocomplete="on" class="form-control" placeholder="@Messages("util.your-email")" required="required" name="@Prenotation.emailSTR">
+						<div class="row margined">
+							<div class="col-xs-6">
+								<input type="text" id="from" required="required" class="form-control" name="@Prenotation.fromSTR" placeholder="@Messages("util.arrival-date")"></div>
+							<div class="col-xs-6">
+								<input type="text" id="to" required="required" name="@Prenotation.toSTR" class="form-control" placeholder="@Messages("util.departure-date")"></div>
+							<div class="col-xs-12 margined">
+								<select name="@Prenotation.treatmentSTR" id="treatment" class="form-control">
+									<option value="@Treatment.bb">@Messages("treatment.bb")</option>
+									<option value="@Treatment.hb">@Messages("treatment.hb")</option>
+									<option value="@Treatment.fb">@Messages("treatment.fb")</option>
+								</select>
+							</div>
+							<div class="col-xs-12">
+								<button class="btn btn-dark" id="submit">@Messages("util.book-now")</button>
+							</div>
+						</div>
+						<input type="hidden" id="nonref" name="@Prenotation.nonRefundableSTR" value="false"></form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">@Messages("price.modal-title")</h4>
+			</div>
+			<div class="modal-body">@Messages("price.modal-body")</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-warn" data-dismiss="modal">@Messages("price.modal-discard")</button>
+				<button type="button" class="btn btn-primary" id="acceptDiscount" >@Messages("price.modal-accept")</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<script type="text/javascript" src="/assets/javascripts/validation.js"></script>

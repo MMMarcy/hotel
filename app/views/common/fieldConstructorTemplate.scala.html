@@ -1,0 +1,16 @@
+@(elements: helper.FieldElements)(implicit lang: Lang)
+
+@import play.api.i18n._
+
+
+<div class="row margined">
+	<div class="col-md-2">
+		<label for="@elements.id">@elements.label</label>
+	</div>
+	<div class="col-md-3">
+		@elements.input
+	</div>
+	<div class="col-md-7" style="color: red;">
+		@elements.errors.mkString(", ")
+	</div>
+</div>

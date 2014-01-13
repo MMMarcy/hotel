@@ -1,0 +1,126 @@
+@()(implicit lang: Lang)
+
+@import play.api.i18n._
+@import org.joda.time.MonthDay
+@import models._
+@import play.api.Logger
+
+
+
+@main(Messages("home.title")) {
+<!--<div class="row slider">
+<div class="col-xs-12 slides-container">
+	<ul class="slides">
+		<li class="slide">
+			<img src="/assets/images/hotel-slide-1.jpg" alt="test">
+			<div class="caption">@Messages("home.caption1")</div>
+		</li>
+		<li class="slide">
+			<img src="/assets/images/hotel-slide-2.jpg" alt="test">
+			<div class="caption">@Messages("home.caption2")</div>
+		</li>
+		<li class="slide">
+			<img src="/assets/images/hotel-slide-3.jpg" alt="test">
+			<div class="caption">@Messages("home.caption3")</div>
+		</li>
+	</ul>
+</div>
+</div>
+-->
+<div class="row">
+@common.carousel(
+	("/assets/images/hotel-slide-1.jpg", Messages("home.caption1")),
+	("/assets/images/hotel-slide-2.jpg", Messages("home.caption2")),
+	("/assets/images/hotel-slide-3.jpg", Messages("home.caption3"))
+)
+</div>
+
+<h2 class="direct-prenotation">
+<a href="@(routes.Application.accomodation)#special-offer" >@Messages("home.direct-prenotation")</a>
+</h2>
+
+<hr>
+
+<div class="row box-container">
+<div class="col-sm-4">
+	@common.box(Html(""))(Messages("home.check-in-title")) {
+	<img src="/assets/images/breakfast.jpg">
+		<div>@Html(Messages("home.check-in"))</div>
+		<div class="row margined">
+			<div class="col-xs-4">
+				<a href="@(routes.Application.accomodation)#check-in-out" class="btn btn-default">@Messages("util.more-info")</a>
+			</div>
+		</div>
+	}
+</div>
+
+<div class="col-sm-4 box">
+	<h3>@Messages("price.today")</h3>
+	<span></span>
+
+	<div class="row">
+		<div class="col-xs-12">
+			@Messages("price.intro-brief")
+				@defining(new MonthDay()){today =>
+			<ul>
+				<li class="col-xs-12">
+					@Messages("room.lake-view")
+					<small class="pull-right">
+						@UtilObject.format(PriceObject.map(RoomType.lakeView) (Treatment.bb) (today))
+					</small>
+				</li>
+				<li class="col-xs-12">
+					@Messages("room.mountain-view")
+					<small class="pull-right">
+						@UtilObject.format(PriceObject.map(RoomType.mountainView) (Treatment.bb)(today))
+					</small>
+				</li>
+				<li class="col-xs-12">
+					@Messages("room.suite")
+					<small class="pull-right">
+						@UtilObject.format(PriceObject.map(RoomType.suite) (Treatment.bb)(today))
+					</small>
+				</li>
+				<li class="col-xs-12">
+					@Messages("room.single")
+					<small class="pull-right">
+						@UtilObject.format(PriceObject.map(RoomType.single) (Treatment.bb)(today))
+					</small>
+				</li>
+			</ul>
+			}
+		</div>
+	</div>
+	<div class="row margined">
+		<div class="col-xs-4">
+			<a href="@(routes.Application.accomodation)#prices" class="btn btn-default">@Messages("util.more-info")</a>
+		</div>
+	</div>
+</div>
+
+<div class="col-sm-4 box">
+	<h3>@Messages("home.services-short-title")</h3>
+	<span></span>
+
+	<ul>
+		<li>
+			<img src="/assets/images/wifi.png">@Messages("home.services-short-wifi")</li>
+		<li>
+			<img src="/assets/images/swimming.png">@Messages("home.services-short-spa")</li>
+		<li>
+			<img src="/assets/images/car.png">@Messages("home.services-short-parking")</li>
+		<li>
+			<img src="/assets/images/center.png">@Messages("home.services-short-downtown")</li>
+		<li>
+			<img src="/assets/images/restaurant.png">@Messages("home.services-short-restaurant-bar")</li>
+	</ul>
+	<div class="row margined">
+		<div class="col-xs-4">
+			<a href="@routes.Application.services" class="btn btn-default">@Messages("util.more-info")</a>
+		</div>
+	</div>
+
+</div>
+
+</div>
+}

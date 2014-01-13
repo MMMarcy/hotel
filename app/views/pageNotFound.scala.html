@@ -1,0 +1,18 @@
+@(path: String)(implicit lang: Lang)
+@import play.api.i18n._
+@import common._
+
+
+@main(Messages("surroundings.title")) {
+
+@common.landscape()
+
+<div class="row">
+	<div class="col-xs-12 box">
+		<h3>@Messages("error.page-not-found-title")</h3>
+		<span></span>
+		<div>@Html(Messages("error.page-not-found", path))</div>
+	</div>
+</div>
+
+}

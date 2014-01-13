@@ -1,0 +1,103 @@
+@(room: models.RoomType.Value)(implicit lang: Lang)
+
+@import play.api.i18n._
+@import org.joda.time.MonthDay
+@import models._
+@import models.RoomType._
+@import models.Treatment._
+@import common._
+
+@main(Messages("accomodation.title")){
+
+@common.landscape()
+<div class="row margined">
+	<div class="col-xs-12 margined">
+		<h2>
+			@{
+				room match {
+					case RoomType.suite => Messages("room.suite")
+					case RoomType.mountainView => Messages("room.mountain-view")
+					case RoomType.lakeView => Messages("room.lake-view")
+					case RoomType.single => Messages("room.suite")
+				}
+			}
+		</h2>
+		<hr></div>
+	<div class="col-lg-6">
+		@{
+				room match {
+					case RoomType.suite => common.carousel(
+							("/assets/images/suite1.jpg", Messages("images.suite1")),
+							("/assets/images/suite2.jpg", Messages("images.suite2")),
+							("/assets/images/suite3.jpg", Messages("images.suite3"))
+						)
+					case RoomType.mountainView => common.carousel(
+							("/assets/images/mountainView1.jpg", Messages("images.mountainView1")),
+							("/assets/images/mountainView2.jpg", Messages("images.mountainView2")),
+							("/assets/images/mountainView3.jpg", Messages("images.mountainView3"))
+						)
+					case RoomType.lakeView => common.carousel(
+							("/assets/images/lakeView1.jpg", Messages("images.lakeView1")),
+							("/assets/images/lakeView2.jpg", Messages("images.lakeView2")),
+							("/assets/images/lakeView3.jpg", Messages("images.lakeView3"))
+						)
+					case RoomType.single => common.carousel(
+							("/assets/images/single1.jpg", Messages("images.single1")),
+							("/assets/images/single2.jpg", Messages("images.single2")),
+							("/assets/images/single3.jpg", Messages("images.single3"))
+						)
+				}
+			}
+	</div>
+	<div class="col-lg-6 box">
+		<h3>@Messages("room.description")</h3>
+		<span></span>
+		<div>
+		@{
+				room match {
+					case RoomType.suite => Messages("room.suite-desc")
+					case RoomType.mountainView => Messages("room.mountain-view-desc")
+					case RoomType.lakeView => Messages("room.lake-view-desc")
+					case RoomType.single => Messages("room.suite-desc")
+				}
+			}
+			</div>
+		@common.bookingPanel(room)
+	</div>
+	<div class="row margined">
+		<div class="col-xs-12">
+			<div class="col-xs-12 box">
+				<h3>Room Facilities</h3>
+				<span></span>
+			</div>
+			<div class="col-xs-4 facilities">
+				<ul>
+					<li><span class="glyphicon glyphicon-ok"></span>Private Bathroom</li>
+					<li><span class="glyphicon glyphicon-ok"></span>Television</li>
+					<li><span class="glyphicon glyphicon-ok"></span>Air conditioning</li>
+					<li><span class="glyphicon glyphicon-ok"></span>Telephone</li>
+					<li><span class="glyphicon glyphicon-ok"></span>Safe</li>
+				</ul>
+			</div>
+			<div class="col-xs-4 facilities">
+				<ul>
+					<li><span class="glyphicon glyphicon-ok"></span>Three beds</li>
+					<li><span class="glyphicon glyphicon-ok"></span>One queen size bed</li>
+					<li><span class="glyphicon glyphicon-ok"></span>Private terrace</li>
+					<li><span class="glyphicon glyphicon-ok"></span>Something</li>
+					<li><span class="glyphicon glyphicon-ok"></span>Safe</li>
+				</ul>
+			</div>
+			<div class="col-xs-4 facilities">
+				<ul>
+					<li><span class="glyphicon glyphicon-ok"></span>Private Bathroom</li>
+					<li><span class="glyphicon glyphicon-ok"></span>Television</li>
+					<li><span class="glyphicon glyphicon-ok"></span>Air conditioning</li>
+					<li><span class="glyphicon glyphicon-ok"></span>Telephone</li>
+					<li><span class="glyphicon glyphicon-ok"></span>Safe</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+}

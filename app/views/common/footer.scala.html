@@ -1,0 +1,47 @@
+@()(implicit lang: Lang)
+
+@import play.api.i18n._
+
+<div class="row dark-bgd">
+            <div class="col-lg-4 widget">
+                <div class="widget-title clearfix">
+                    <h5 class="clearfix">@Messages("nav.languages")</h5>
+                </div>
+                <div>
+                    <ul>
+                            <li>
+                                <a href='@routes.Application.language("en")'>English</a>
+                            </li>
+                            <li>
+                                <a href='@routes.Application.language("it")'>Italiano</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="col-lg-5 widget hidden-xs">
+                <div class="widget-title clearfix">
+                    <h5 class="clearfix">@Messages("home.widget-1-title")</h5>
+                </div>
+                <div>@Messages("home.widget-1-body")</div>
+            </div>
+            <div class="col-lg-3 widget">
+                <div class="widget-title clearfix">
+                    <h5 class="clearfix">@Messages("home.widget-2-title")</h5>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="@routes.Application.index">@Messages("home.home")</a></li>
+                        <li><a href="@routes.Application.accomodation">@Messages("home.accomodation")</a></li>
+                        <li><a href="@routes.Application.services">@Messages("home.services")</a></li>
+                        <li><a href="@routes.Application.aroundUs">@Messages("home.events")</a></li>
+                        <li><a href="@routes.Application.contacts">@Messages("home.contact")</a></li>
+                        <li><a href="@routes.Application.showForm">@Messages("util.book-now")</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 widget"></div>
+        </div>
+        <div class="row footer">
+            <div class="col-xs-6">P.IVA 03366570236</div>
+            <div class="col-xs-6 hidden-xs text-right"><a href="@routes.Application.index">@Messages("home.home")</a> | <a href="@routes.Application.accomodation">@Messages("home.accomodation")</a> | <a href="@routes.Application.contacts">@Messages("home.contact")</a></div>
+        </div>

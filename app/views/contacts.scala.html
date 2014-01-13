@@ -1,0 +1,68 @@
+@()(implicit lang: Lang)
+@import play.api.i18n._
+@import common._
+
+
+@main(Messages("surroundings.title")) {
+
+@common.landscape()
+<div class="row  box-container margined">
+	<div class="col-sm-6">
+
+		<div class="row">
+			<div class="col-xs-12 box">
+				<h3>@Messages("contacts.label")</h3>
+				<span></span>
+				<div class="row">
+					<div class="col-xs-4">@Messages("contacts.address-label")</div>
+					<div class="col-xs-8">
+						<a href="@UtilObject.printGeoCoord(UtilObject.ancoraCoord)" >
+							@Messages("contacts.address-real")
+						</a>
+						</div>
+						<div class="col-xs-4">@Messages("contacts.phone")</div>
+						<div class="col-xs-8">+39 (0) 45 7255202</div>
+						<div class="col-xs-4">Email</div>
+						<div class="col-xs-8">
+							<a href="mailto:info@@allancora.com">Info@@allancora.com</a>
+						</div>
+						<div class="col-xs-4">Fax</div>
+						<div class="col-xs-8">+39 (0) 45 6279863</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 box">
+					<h3>@Messages("social.label")</h3>
+					<span></span>
+					<div class="col-xs-12 margined">@common.skype()</div>
+					<div class="col-xs-12 margined">@common.facebook()</div>
+					<div class="col-xs-12 margined">@common.gplus()</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 padded">
+			@common.map(List(UtilObject.ancoraCoord), "contactMap", false, 1.5F)
+		</div>
+	</div>
+
+	<!-- 
+<div class="col-xs-12 valigned">
+	<div class="row">
+		<div class="col-xs-4">Skype</div>
+		<div class="col-xs-8">
+			<script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+			<div id="SkypeButton_Call_albergoallancora_1" style="width: 14%;">
+				<script type="text/javascript">
+    Skype.ui({
+      "name": "dropdown",
+      "element": "SkypeButton_Call_albergoallancora_1",
+      "participants": ["albergoallancora"]
+    });
+  </script>
+			</div>
+		</div>
+	</div>
+</div>
+-->
+}

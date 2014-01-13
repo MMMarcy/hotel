@@ -1,0 +1,26 @@
+@(images: (String,String)*)(implicit lang: Lang)
+<div id="carousel" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		@for(i <- 0 until images.size){
+			<li data-target="#carousel" data-slide-to="@i" @if(i==0){class="active"}></li>
+		}
+	</ol>
+
+	<div class="carousel-inner">
+		@for(i <- 0 until images.size){
+			<div class="item @if(i==0){active}">
+				<img src="@images(i)._1" alt="Suite1">
+				<div class="caption">@images(i)._2</div>
+			</div>
+		}
+	</div>
+
+	<a class="left carousel-control" href="#carousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="#carousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+<script type="text/javascript">$('.carousel').carousel()</script>
+

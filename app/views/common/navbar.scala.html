@@ -1,0 +1,71 @@
+@()(implicit lang: Lang)
+
+@import play.api.i18n._
+<div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+            <li>
+                <a href="@routes.Application.index">
+                    <span>@Messages("home.home")</span>
+                    <small class="sub-heading hidden-xs">@Messages("home.home-sub")</small>
+                </a>
+            </li>
+            <li>
+                <a href="@routes.Application.accomodation">
+                    <span>@Messages("home.accomodation")</span>
+                    <small class="sub-heading hidden-xs">@Messages("home.accomodation-sub")</small>
+                </a>
+            </li>
+            <li>
+                <a href="@routes.Application.services">
+                    <span>@Messages("home.services")</span>
+                    <small class="sub-heading hidden-xs">@Messages("home.accomodation-sub")</small>
+                </a>
+            </li>
+            <li class="hidden-sm">
+                <a href="@routes.Application.aroundUs">
+                    <span>@Messages("home.events")</span>
+                    <small class="sub-heading hidden-xs">@Messages("home.events-sub")</small>
+                </a>
+            </li>
+            <li>
+                <a href="@routes.Application.contacts">
+                    <span>@Messages("home.contact")</span>
+                    <small class="sub-heading hidden-xs">@Messages("home.contact-sub")</small>
+                </a>
+            </li>
+            <li>
+                <a href="@routes.Application.showForm">
+                <span>@Messages("util.book-now")</span>
+                <small class="sub-heading hidden-xs">
+                    @Messages("util.get-discount")
+                </small>        
+                </a>
+            </li>
+            <li class="small-contacts hidden-xs hidden-sm hidden-md">
+                <a href="mailto:info@@allancora.com" style="text-transform: none;">
+                    <div>
+                        <span class="glyphicon glyphicon-earphone"></span>
+                        +39 (0)45 7255202
+                    </div>
+                    <div>
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        info@@allancora.com
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="corner corner-left hidden-xs"></div>
+    <div class="corner corner-right hidden-xs"></div>
+
+</div>

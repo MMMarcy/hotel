@@ -1,0 +1,223 @@
+@()(implicit lang: Lang)
+
+@import play.api.Logger
+
+@import play.api.i18n._
+@import org.joda.time.MonthDay
+@import models._
+@import models.RoomType._
+@import models.Treatment._
+@import common._
+
+@Logger.debug(lang.toString)
+
+
+
+
+@main(Messages("accomodation.title")) {
+@common.landscape()
+<div class="row">
+	<div class="col-xs-12">
+		<h2>@Messages("room.our-rooms")</h2>
+	</div>
+</div>
+<hr>
+<div class="row box-container">
+	<div class="col-sm-4 box padded">
+		<img src="/assets/images/suite1.jpg" alt="">
+		<h3>@Messages("room.lake-view")</h3>
+		<span></span>
+		<div>
+			@Html(Messages("room.lake-view-desc"))
+			<div class="margined">
+			<a href="@routes.Application.showRoom("lakeview")" class="btn btn-default">@Messages("util.discover-more")</a>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="col-sm-4 box padded">
+	<img src="/assets/images/suite2.jpg" alt="">
+		<h3>@Messages("room.mountain-view")</h3>
+		<span></span>
+
+		<div>
+			@Messages("room.mountain-view-desc")
+			<div class="margined">
+			<a href="@routes.Application.showRoom("mountainview")" class="btn btn-default">@Messages("util.discover-more")</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-sm-4 box padded">
+	<img src="/assets/images/suite3.jpg" alt="">
+		<h3>@Messages("room.suite")</h3>
+		<span></span>
+		<div>
+			@Messages("room.suite-desc")
+			<div class="margined">
+				<a href="@routes.Application.showRoom("suite")" class="btn btn-default">@Messages("util.discover-more")</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12 margined" id="prices">
+		<h2>@Messages("prices")</h2>
+		<hr>
+	</div>
+	<div class="col-xs-12">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="col-xs-2 title-periods">@Messages("periods")</div>
+				@Html(PriceObject.printPeriods)
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 box">
+				<h3>@Messages("room.single")</h3>
+				<span></span>
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-2 val-per">@Messages("treatment.bb")</div>
+				@Html(PriceObject.printRow(RoomType.single, Treatment.bb))
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-2 val-per">@Messages("treatment.hb")</div>
+				@Html(PriceObject.printRow(RoomType.single, Treatment.hb))
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-2 val-per">@Messages("treatment.fb")</div>
+				@Html(PriceObject.printRow(RoomType.single, Treatment.fb))
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 box">
+				<h3>@Messages("room.mountain-view")</h3>
+				<span></span>
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-2 val-per">@Messages("treatment.bb")</div>
+				@Html(PriceObject.printRow(RoomType.mountainView, Treatment.bb))
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-2 val-per">@Messages("treatment.hb")</div>
+				@Html(PriceObject.printRow(RoomType.mountainView, Treatment.hb))
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-2 val-per">@Messages("treatment.fb")</div>
+				@Html(PriceObject.printRow(RoomType.mountainView, Treatment.fb))
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 box">
+				<h3>@Messages("room.lake-view")</h3>
+				<span></span>
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-2 val-per">@Messages("treatment.bb")</div>
+				@Html(PriceObject.printRow(RoomType.lakeView, Treatment.bb))
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-2 val-per">@Messages("treatment.hb")</div>
+				@Html(PriceObject.printRow(RoomType.lakeView, Treatment.hb))
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-2 val-per">@Messages("treatment.fb")</div>
+				@Html(PriceObject.printRow(RoomType.lakeView, Treatment.fb))
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 box">
+				<h3>@Messages("room.suite")</h3>
+				<span></span>
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-2 val-per">@Messages("treatment.bb")</div>
+				@Html(PriceObject.printRow(RoomType.suite, Treatment.bb))
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-2 val-per">@Messages("treatment.hb")</div>
+				@Html(PriceObject.printRow(RoomType.suite, Treatment.hb))
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-2 val-per">@Messages("treatment.fb")</div>
+				@Html(PriceObject.printRow(RoomType.suite, Treatment.fb))
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 box">
+				<h3>@Messages("prices.special-info")</h3>
+				<span></span>
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-4 val-per">@Messages("prices.discount-infants")</div>
+				<div class="col-xs-2 val-per">100%</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-4 val-per">@Messages("prices.discount-small-kids")</div>
+				<div class="col-xs-2 val-per">50%</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-4 val-per">@Messages("prices.discount-big-kids")</div>
+				<div class="col-xs-2 val-per">20%</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="col-xs-4 val-per">@Messages("prices.supplement")</div>
+				<div class="col-xs-2 val-per">100%</div>
+			</div>
+		</div>
+	</div>
+	<div class="row box">
+		<div class="col-xs-12 padded">
+			<div class="col-md-9 text-justify">
+				@Messages("price.disclaimer")
+				<input type="checkbox" id="disclaimer-acceptance"></div>
+			<div class="col-md-2 offset-md-10 padded">
+				<select class="form-control" disabled="disabled" id="sel-currency">
+					<option>Chf</option>
+					<option>Dkk</option>
+					<option>Gbp</option>
+					<option>Nok</option>
+					<option>Sek</option>
+					<option>Usd</option>
+				</select>
+			</div>
+			<div class="col-md-1 text-center padded">
+				<button class="btn btn-default" id="btn-currency" disabled="disabled">@Messages("price.convert")</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="/assets/javascripts/currency.js"></script>
+<div class="row">
+	<div class="col-xs-12">
+		<h2>@Messages("accomodation.rules")</h2>
+	</div>
+</div>
+<hr>
+<div class="row" id="check-in-out">
+	<div class="col-sm-6 box margined">
+		<h3>@Messages("accomodation.check-in-title")</h3>
+		<span></span>
+		<div>@Messages("accomodation.check-in")</div>
+	</div>
+	<div class="col-sm-6 box margined">
+		<h3>@Messages("accomodation.check-out-title")</h3>
+		<span></span>
+		<div>@Messages("accomodation.check-out")</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-6 box margined" id="special-offer">
+		<h3>@Messages("accomodation.special-offer-title")</h3>
+		<span></span>
+		<div>@Messages("accomodation.special-offer")</div>
+	</div>
+	<div class="col-xs-6 box margined">
+		<h3>@Messages("accomodation.timetables-title")</h3>
+		<span></span>
+		<div>@Messages("accomodation.timetables")</div>
+	</div>
+</div>
+}

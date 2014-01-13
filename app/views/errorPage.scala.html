@@ -1,0 +1,18 @@
+@()(implicit lang: Lang)
+@import play.api.i18n._
+@import common._
+
+
+@main(Messages("surroundings.title")) {
+
+@common.landscape()
+
+<div class="row">
+	<div class="col-xs-12 box">
+		<h3>@Messages("error.error-page-title")</h3>
+		<span></span>
+		<div>@Messages("error.error-page")</div>
+	</div>
+</div>
+
+}

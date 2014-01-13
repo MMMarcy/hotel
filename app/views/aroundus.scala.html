@@ -1,0 +1,116 @@
+@()(implicit lang: Lang)
+@import play.api.i18n._
+@import common._
+
+
+@main(Messages("surroundings.title")) {
+
+@common.landscape()
+
+<div class="row">
+	<div class="col-xs-12">
+		<h2>@Messages("surroundings.art-history")</h2>
+		<hr></div>
+</div>
+<div class="row box-container">
+	<div class="col-sm-4 box padded">
+		<img src="/assets/images/poi/verona.jpg" alt="">
+		<h3>@Messages("surroundings.verona")</h3>
+		<span></span>
+		<div>@Html(Messages("surroundings.verona-desc"))</div>
+		<div class="margined">
+			<a href="#" class="btn btn-default">@Messages("util.discover-more")</a>
+		</div>
+	</div>
+	<div class="col-sm-4 box padded">
+		<img src="/assets/images/poi/opera.jpg" alt="">
+		<h3>@Messages("surroundings.opera")</h3>
+		<span></span>
+		<div>@Html(Messages("surroundings.opera-desc"))</div>
+		<div class="margined">
+			<a href="#" class="btn btn-default">@Messages("util.discover-more")</a>
+		</div>
+	</div>
+	<div class="col-sm-4 box padded">
+		<img src="/assets/images/poi/lago.jpg" alt="">
+		<h3>@Messages("surroundings.lake")</h3>
+		<span></span>
+		<div>@Messages("surroundings.lake-desc")</div>
+		<div class="margined">
+			<a href="#" class="btn btn-default">@Messages("util.discover-more")</a>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<h2>@Messages("surroundings.for-families")</h2>
+		<hr></div>
+</div>
+<div class="row box-container">
+	<div class="col-sm-4 box padded">
+		<img src="/assets/images/poi/canevaworld.jpg" alt="">
+		<h3>@Messages("surroundings.caneva")</h3>
+		<span></span>
+		<div>@Html(Messages("surroundings.caneva-desc"))</div>
+		<div class="margined">
+			<a href="#" class="btn btn-default">@Messages("util.discover-more")</a>
+		</div>
+	</div>
+	<div class="col-sm-4 box padded">
+		<img src="/assets/images/poi/NaturaVivaLogo.gif" alt="">
+		<h3>@Messages("surroundings.zoo")</h3>
+		<span></span>
+		<div>@Html(Messages("surroundings.zoo-desc"))</div>
+		<div class="margined">
+			<a href="#" class="btn btn-default">@Messages("util.discover-more")</a>
+		</div>
+	</div>
+	<div class="col-sm-4 box padded">
+		<img src="/assets/images/poi/gardaland.jpg" alt="">
+		<h3>@Messages("surroundings.gardaland")</h3>
+		<span></span>
+		<div>@Messages("surroundings.gardaland-desc")</div>
+		<div class="margined">
+			<a href="#" class="btn btn-default">@Messages("util.discover-more")</a>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<h2>@Messages("surroundings.relax")</h2>
+		<hr></div>
+</div>
+<div class="row box-container">
+	<div class="col-sm-4 box padded">
+		<img src="/assets/images/poi/enogastronomia.jpg" alt="">
+		<h3>@Messages("surroundings.enogastronomia")</h3>
+		<span></span>
+		<div>@Html(Messages("surroundings.enogastronomia-desc"))</div>
+		<div class="margined">
+			<a href="#" class="btn btn-default">@Messages("util.discover-more")</a>
+		</div>
+	</div>
+	<div class="col-sm-4 box padded">
+		<img src="/assets/images/poi/sigurta.jpg" alt="">
+		<h3>@Messages("surroundings.sigurta")</h3>
+		<span></span>
+		<div>@Html(Messages("surroundings.sigurta-desc"))</div>
+		<div class="margined">
+			<a href="#" class="btn btn-default">@Messages("util.discover-more")</a>
+		</div>
+	</div>
+	<div class="col-sm-4 box padded">
+		<img src="/assets/images/gardacqua.jpg" alt="">
+		<h3>@Messages("gardacqua.association")</h3>
+		<span></span>
+		<div>@Messages("gardacqua.short")</div>
+		<div class="margined">
+			<a href="#" class="btn btn-default">@Messages("util.discover-more")</a>
+		</div>
+	</div>
+</div>
+
+
+
+}

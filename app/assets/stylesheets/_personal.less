@@ -1,0 +1,415 @@
+.dark-bgd{
+	background: url('/assets/images/bgd.png') #311807;
+}
+
+.header{
+	padding: 9px 10px 0px 10px;
+}
+
+.container{
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 19px 0px rgba(50, 50, 50, 0.91);
+	-moz-box-shadow:    0px 0px 19px 0px rgba(50, 50, 50, 0.91);
+	box-shadow:         0px 0px 19px 0px rgba(50, 50, 50, 0.91);
+}
+
+.margined{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*
+
+		SOCIAL ICONS
+
+*/
+.social_icon{
+	display: block;
+	width: 19px;
+	height: 19px;
+	border-radius: 99%;
+	margin: 0 5px 10px 0;
+	background: url('/assets/images/social/social_icons.png') no-repeat #ffffff;
+	/*-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;*/
+	.transition(all 0.3s ease-in-out);
+}
+
+.social_icon:hover{
+	background-color: @light-orange;
+}
+
+.social_panel{
+	padding-left: 5px;
+ li {
+	float: left;
+	list-style: none;
+}
+}
+
+//Facebook
+#facebook_icon{
+	background-position: -20px 5px;
+}
+#facebook_icon:hover{
+	background-position: -20px -15px;
+}
+
+//Skype
+#skype_icon{
+	background-position: -71px 5px;
+}
+#skype_icon:hover{
+	background-position: -71px -15px;
+}
+/*
+
+		END SOCIAL ICONS
+
+*/
+
+//
+// Map Icon
+// -----------------------------
+
+.map_icon{
+	display: inline-block;
+	position: relative;
+	background: url(/assets/images/map_white.png);
+	background-size: contain;
+	width: 19px;
+	height: 19px;
+	.transition(all 0.3s ease-in-out);
+}
+
+
+
+//
+// Title & decorations
+// --------------------
+.dec{
+	display: inline-block;
+	width: 38px;
+	height: 17px;
+}
+.dec-left{
+	background: url(/assets/images/dec-left.png) no-repeat;
+}
+.dec-right{
+	background: url(/assets/images/dec-right.png) no-repeat;
+}
+
+
+.title-wrapper{
+	background-color: @light-color;
+	padding: 30px 0px 20px 0px;
+}
+
+.title{
+	font-size: 26px;
+}
+.title-periods{
+	font-size: 26px;
+	@media (max-width: @screen-sm) {
+    	font-size: 16px;
+    	padding: 15px;
+  	}
+}
+.val, .val-per {
+	font-size: 18px;
+	@media (max-width: @screen-md) {
+    	font-size: 16px;
+  	}
+  	@media (max-width: @screen-sm) {
+    	font-size: 14px;
+  	}
+  	@media (max-width: @screen-xs) {
+    	font-size: 12px;
+  	}
+}	
+
+
+body{
+  background: @body-background
+}
+.corner{
+	border-top: 15px solid;
+	border-color: @dark-orange;
+	width: 0;
+	height: 0;
+	position: absolute;
+	bottom: -22px;
+}
+.corner-left {	
+	border-left: 15px solid rgba(255,255,255,0);;	
+	left: 0;
+}
+.corner-right{
+	border-right: 15px solid rgba(255,255,255,0);;
+	right: 0;
+}
+
+//
+// Navbar
+// ----------------------
+.small-contacts {
+	> a { 
+		> div:first-child{
+			border-bottom: 1px solid @brown-nav;
+			margin-bottom: 5px;
+			padding-bottom: 5px;
+		}
+	padding: 10px !important;
+	}
+}
+
+//
+//ROOMS ------------------
+//
+.price-container{
+	margin: 15px;
+	color: white;
+	font-size: 32px;
+	font-family: @font-family-serif;
+	> p {
+		color: @gray-light;
+		font-size: 16px;
+	}
+}
+
+
+.price-corner{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}
+.tl{
+	top: 0;	left: 0;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+.tr{
+	top: 0; right: 0;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+.bl{
+	bottom: 0; left: 0;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+.br{
+	bottom: 0; right: 0;
+	border-bottom: 1px solid #fff;
+	border-right:  1px solid #fff;
+}
+
+.facilities{
+	> ul {
+		list-style: none;
+		> li{ 
+			border-bottom: #f4f4f4 1px solid;
+			padding: 5px;
+			> span {
+				color: @light-gray;
+				margin-right: 6px;
+			}
+		}
+		>li:last-child{
+			border: 0px;
+		}
+	}
+}
+
+/*
+
+	SLIDES
+	----------------------
+*/
+.slider{
+	overflow: hidden;
+	position: relative;
+}
+.slides-container{
+	padding: 0px;
+}
+.slides{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 1000%;
+	.transition(all 0.9s);
+}
+.slide{
+	display: block;
+	float: left;
+	position: relative;
+	.caption{
+		font-size: 24px !important;
+		margin: 0;
+		width: 300px;
+		padding: 10px;
+		color: #fff;
+		font-style: italic;
+		z-index: 1;
+		position: absolute;
+		bottom: 10%;
+		right: 0%;
+		display: block;
+		background-color: rgba(226, 97, 67, 0.7);
+		@media (max-width: @screen-sm) {
+	    	font-size: 16px !important;
+	    	padding: 5px;
+	  	}
+
+	}
+	img {
+		display: block;
+	}
+}
+
+.direct-prenotation{
+	text-align: center;
+	font-size: 24px;
+	font-style: italic;
+	padding: 30px 60px 30px 60px;
+	a{
+		color: @dark-gray;
+	}
+	@media (max-width: @screen-sm) {
+    	font-size: 20px;
+    	padding: 15px;
+  	}
+}
+hr{
+	margin: 0px;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.central-box{
+	border-right: 1px solid @light-gray;
+	border-left: 1px solid @light-gray;
+}
+.box{
+	
+	h3{margin-bottom: 0px;
+		border-bottom: 1px solid @light-gray;
+		padding-bottom: 4px;}
+	> span{display: block;
+		width: 20%;
+		height: 4px;
+		background-color: rgba(226, 97, 67, 1);
+		margin-bottom: 10px;
+	}
+	div{
+		text-align: justify;
+	}
+	ul{
+		list-style: none;
+		padding: 0px;
+	}
+	li img{
+		width: 26px;
+		padding-right: 6px;
+	}
+	 > div,ul,.btn{
+		font-family: @font-family-sans-serif;
+	}
+	padding-bottom: 20px;
+}
+.border-bottom{
+	border-bottom: 1px solid #e4e4e4;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+
+.widget{
+	padding: 20px;
+	color: #ccb6a8;
+	text-align: justify;
+	ul{
+		list-style: none;
+		padding-left: 0px;
+		:last-child{
+			border: 0px;
+		}
+		li{
+			list-style-image: url(/assets/images/list-triangle.png);
+			list-style-position: inside;
+			border-bottom: 1px solid #685345;
+			padding-top: 6px;
+			padding-bottom: 5px;
+			> a {
+				color: white;
+			}
+		}
+	}
+}
+
+.widget-title{
+	h5{
+		display: block;
+		background-color: @light-orange;
+		line-height: 24px;
+		font-size: 16px;
+		color: #fff;
+		float: left;
+		text-transform: capitalize;
+		padding: 4px 8px 4px 8px;
+		position: relative;
+		z-index: 1;
+	}
+	h5:before{
+		border-color: @light-orange rgba(226, 97, 67,0);
+		/*border-right-color: transparent:
+		border-bottom-color: @light-orange;*/
+		position: absolute;
+		width: 1px;
+		height: 0px;
+		right: -16px;
+		top: 0px;
+		border-width: 16px 16px;
+		border-style: solid;
+		z-index: 10;
+	}
+}
+
+.footer{
+	background: #311807;
+	color: #7a6353;
+	line-height: 46px;
+	font-size: 16px;
+	a{
+		color: white;
+		&:hover{
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+}
+
+.padded{
+	padding: 25px;
+}
+
+
+#fb-root {
+    display: none;
+}
+
+/* To fill the container and nothing else */
+
+#dropdown_SkypeButton_Call_albergoallancora_1{
+	z-index: 100;
+}
+
+
+
+
+
+
