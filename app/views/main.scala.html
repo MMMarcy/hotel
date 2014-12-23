@@ -5,16 +5,17 @@
 @import play.api.Logger
 
 <!DOCTYPE html>
-<html>
+<html lang="@lang.language">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>@title</title>
-    <link rel='shortcut icon' type='image/png' href='@routes.Assets.at("images/favicon.png")'>
-    <link rel='stylesheet' href='@routes.Assets.at("stylesheets/bootstrap.css")'>
-    <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script src='@routes.Assets.at("javascripts/bootstrap.min.js")'></script>
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <link rel="stylesheet" href='@routes.Assets.at("stylesheets/bootstrap.css")'>
+    <link rel="stylesheet" type="text/css" 
+    href="//cdn.jsdelivr.net@routes.WebJarAssets.at(WebJarAssets.locate("black-tie/jquery-ui.min.css"))">
+    <script src="//cdn.jsdelivr.net@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))" type="text/javascript"></script>
+    <script src="//cdn.jsdelivr.net@routes.WebJarAssets.at(WebJarAssets.locate("jquery-ui.min.js"))" type="text/javascript"></script>
+    <script src="//cdn.jsdelivr.net@routes.WebJarAssets.at(WebJarAssets.locate("bootstrap.js"))"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIo1FKI9xqFQl7M7dUR_Ds7ZDXt3RrWT4&sensor=true"></script>
