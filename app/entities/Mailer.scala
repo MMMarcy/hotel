@@ -1,13 +1,9 @@
 package entities
 
-import org.apache.commons.mail._
-import models._
-import models.RoomType._
-import models.Treatment._
-import org.joda.time.MonthDay
-import play.api.{Play, Logger}
-import play.api.i18n._
+import play.api.Play
 import play.api.Play.current
+import play.api.i18n._
+
 import scala.language.implicitConversions
 import scala.util.Properties
 
@@ -43,11 +39,11 @@ object Mailer {
   val newLine = Properties.lineSeparator
 
 
-  import mail._
+  import entities.Mailer.mail._
 
   def raiseException() = throw new IllegalArgumentException()
 
-  def notifyPrenotation(prenotation: Prenotation)(implicit lang: Lang) = {
+  def notifyPrenotation(prenotation: Booking)(implicit lang: Lang) = {
     send a new Mail(
       from = (mailHotel, "Hotel Ancora Staff"),
       to = prenotation.email,
@@ -55,39 +51,20 @@ object Mailer {
       subject = Messages("mail.object"),
       message = createBodyForEmail(prenotation)
     )
-
-    /*send a new Mail(
-      from = (mailHotel, "Hotel Ancora Site"),
-      to = mailHotel,
-      subject = "Nuova prenotazione - " + prenotation.firstName + " " + prenotation.lastName,
-      message = prenotation.summary
-    )*/
+    if (Play.isProd) {
+      send a new Mail(
+        from = (mailHotel, "Hotel Ancora Site"),
+        to = mailHotel,
+        subject = "Nuova prenotazione - " + prenotation.firstName + " " + prenotation.lastName,
+        message = prenotation.summary
+      )
+    }
   }
 
-  //TODO: create an HTML
-  private def createBodyForEmail(prenotation: Prenotation)(implicit lang: Lang): String = {
 
-    val str = new StringBuilder()
-
-    def appendNLines[A, B](n: Int): Unit =
-      if (n > 0) {
-        str.append(newLine)
-        appendNLines(n - 1)
-      }
-
-    str.append(Messages("mail.heading", prenotation.lastName))
-    appendNLines(2)
-    str.append(Messages("mail.intro"))
-    appendNLines(2)
-    str.append(Messages("mail.summary-of-prenotation"))
-    appendNLines(1)
-    str.append(prenotation.summary)
-    appendNLines(2)
-    str.append(Messages("mail.greetings"))
-    appendNLines(3)
-    str.append(Messages("Hotel Ancora staff"))
-    appendNLines(3)
-    str.toString
+  private def createBodyForEmail(prenotation: Booking)(implicit lang: Lang): String = {
+    val text = views.html.common.mailTemplate.render(prenotation,lang)
+    text.toString()
   }
 
   object mail {

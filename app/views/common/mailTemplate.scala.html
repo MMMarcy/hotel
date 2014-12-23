@@ -1,0 +1,13 @@
+@(booking: entities.Booking)(implicit lang: Lang)
+
+@Messages("mail.heading", booking.lastName)
+
+@Messages("mail.intro")
+
+@Messages("mail.summary-of-prenotation")
+
+@booking.summary
+
+@Messages("mail.greetings")
+
+@Messages("Hotel Ancora staff")

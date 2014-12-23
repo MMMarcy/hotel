@@ -6,7 +6,7 @@
 @import models.RoomType._
 @import models.Treatment._
 @import common._
-@import entities.Prenotation
+@import entities.Booking
 
 <div class="row margined">
 	<div class="col-md-12">
@@ -22,15 +22,15 @@
 				</div>
 				<div class="col-md-8 margined">
 					<form action="@routes.Application.sendEmail" method="POST">	
-						<input type="hidden" name="@Prenotation.roomSTR" value="@room.toString">
-						<input type="email" autocomplete="on" class="form-control" placeholder="@Messages("util.your-email")" required="required" name="@Prenotation.emailSTR">
+						<input type="hidden" name="@Booking.roomSTR" value="@room.toString">
+						<input type="email" autocomplete="on" class="form-control" placeholder="@Messages("util.your-email")" required="required" name="@Booking.emailSTR">
 						<div class="row margined">
 							<div class="col-xs-6">
-								<input type="text" id="from" required="required" class="form-control" name="@Prenotation.fromSTR" placeholder="@Messages("util.arrival-date")"></div>
+								<input type="text" id="from" required="required" class="form-control" name="@Booking.fromSTR" placeholder="@Messages("util.arrival-date")"></div>
 							<div class="col-xs-6">
-								<input type="text" id="to" required="required" name="@Prenotation.toSTR" class="form-control" placeholder="@Messages("util.departure-date")"></div>
+								<input type="text" id="to" required="required" name="@Booking.toSTR" class="form-control" placeholder="@Messages("util.departure-date")"></div>
 							<div class="col-xs-12 margined">
-								<select name="@Prenotation.treatmentSTR" id="treatment" class="form-control">
+								<select name="@Booking.treatmentSTR" id="treatment" class="form-control">
 									<option value="@Treatment.bb">@Messages("treatment.bb")</option>
 									<option value="@Treatment.hb">@Messages("treatment.hb")</option>
 									<option value="@Treatment.fb">@Messages("treatment.fb")</option>
@@ -40,7 +40,7 @@
 								<button class="btn btn-dark" id="submit">@Messages("util.book-now")</button>
 							</div>
 						</div>
-						<input type="hidden" id="nonref" name="@Prenotation.nonRefundableSTR" value="false"></form>
+						<input type="hidden" id="nonref" name="@Booking.nonRefundableSTR" value="false"></form>
 				</div>
 			</div>
 		</div>

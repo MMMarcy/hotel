@@ -15,60 +15,60 @@ object Application extends Controller {
 
   val prenotationForm = Form {
     mapping(
-      Prenotation.fromSTR -> nonEmptyText,
-      Prenotation.toSTR -> nonEmptyText,
-      Prenotation.adultsSTR -> number(min = 1),
-      Prenotation.bigKidsSTR -> number(min = 0),
-      Prenotation.smallKidsSTR -> number(min = 0),
-      Prenotation.infantsSTR -> number(min = 0),
-      Prenotation.treatmentSTR -> nonEmptyText,
-      Prenotation.roomSTR -> nonEmptyText,
-      Prenotation.emailSTR -> email,
-      Prenotation.phoneSTR -> nonEmptyText,
-      Prenotation.firstNameSTR -> nonEmptyText,
-      Prenotation.lastNameSTR -> nonEmptyText,
-      Prenotation.nonRefundableSTR -> boolean,
-      Prenotation.notesSTR -> optional(text))(Prenotation.apply)(Prenotation.unapply)
+      Booking.fromSTR -> nonEmptyText,
+      Booking.toSTR -> nonEmptyText,
+      Booking.adultsSTR -> number(min = 1),
+      Booking.bigKidsSTR -> number(min = 0),
+      Booking.smallKidsSTR -> number(min = 0),
+      Booking.infantsSTR -> number(min = 0),
+      Booking.treatmentSTR -> nonEmptyText,
+      Booking.roomSTR -> nonEmptyText,
+      Booking.emailSTR -> email,
+      Booking.phoneSTR -> nonEmptyText,
+      Booking.firstNameSTR -> nonEmptyText,
+      Booking.lastNameSTR -> nonEmptyText,
+      Booking.nonRefundableSTR -> boolean,
+      Booking.notesSTR -> optional(text))(Booking.apply)(Booking.unapply)
   }
 
   def index = Action { implicit request =>
-    Ok(views.html.index())
+    Ok(views.html.pages.index())
   }
 
   def accomodation = Action { implicit request =>
-    Ok(views.html.accomodation())
+    Ok(views.html.pages.accomodation())
   }
 
   def services = Action { implicit request =>
-    Ok(views.html.services())
+    Ok(views.html.pages.services())
   }
 
   def showRoom(roomType: String) = Action { implicit request =>
-    Ok(views.html.room(UtilObject.stringToRoomType(roomType.toLowerCase)))
+    Ok(views.html.pages.room(UtilObject.stringToRoomType(roomType.toLowerCase)))
   }
   def aroundUs = Action { implicit request =>
-    Ok(views.html.aroundus())
+    Ok(views.html.pages.aroundus())
   }
 
   def contacts = Action { implicit request =>
-    Ok(views.html.contacts())
+    Ok(views.html.pages.contacts())
   }
 
   def sendEmail = Action { implicit request =>
     prenotationForm.bindFromRequest.fold(
       formWithErrors => {
         // binding failure, you retrieve the form containing errors:
-        BadRequest(views.html.prenotationForm(formWithErrors))
+        BadRequest(views.html.pages.prenotationForm(formWithErrors))
       },
       prenotation => {
         //TODO:successful page
         Mailer.notifyPrenotation(prenotation)
-        Ok(views.html.bookingSuccessful())
+        Ok(views.html.pages.bookingSuccessful())
       })
   }
 
   def showForm = Action { implicit request =>
-    Ok(views.html.prenotationForm(prenotationForm))
+    Ok(views.html.pages.prenotationForm(prenotationForm))
   }
 
   def language(code: String) = Action { implicit request =>

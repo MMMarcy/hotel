@@ -9,12 +9,12 @@ object Global extends WithFilters(new GzipFilter(shouldGzip = (request, response
 
   override def onError(request: RequestHeader, ex: Throwable) = {
     Future.successful(InternalServerError(
-      views.html.errorPage()))
+      views.html.errorpages.error500()))
   }
 
   override def onHandlerNotFound(request: RequestHeader) = {
     Future.successful(NotFound(
-      views.html.pageNotFound(request.path)
+      views.html.errorpages.error404(request.path)
     ))
   }
 }

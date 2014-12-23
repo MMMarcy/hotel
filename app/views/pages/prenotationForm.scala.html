@@ -1,0 +1,69 @@
+@(prenotationForm: Form[entities.Booking])(implicit lang: Lang)
+
+@import play.api.i18n._
+@import org.joda.time.MonthDay
+@import models._
+@import helper._
+@import entities.Booking
+@import models.RoomType._
+@import models.Treatment._
+
+@implicitField = @{ FieldConstructor(common.fieldConstructorTemplate.f(_)(implicitly[Lang])) }
+
+
+@main(Messages("home.title")) {
+	
+	@form(action = routes.Application.sendEmail) {
+<div class="box">
+	<h3>@Messages("form.personal-information")</h3>
+	<span></span>
+	@inputText(prenotationForm(Booking.firstNameSTR), '_label->Messages("form.first-name"), 'class->"form-control")
+
+	@inputText(prenotationForm(Booking.lastNameSTR), '_label->Messages("form.last-name"), 'class->"form-control")
+
+	@inputText(prenotationForm(Booking.phoneSTR), '_label->Messages("form.phone"), 'class->"form-control")
+
+	@inputText(prenotationForm(Booking.emailSTR), '_label->Messages("form.email"), 'class->"form-control" )
+</div>
+<div class="box">
+	<h3>@Messages("form.holiday-information")</h3>
+	<span></span>
+	@inputText(prenotationForm(Booking.fromSTR), '_label->Messages("form.arrival-date"), 'class->"form-control", '_id->"from")
+
+	@inputText(prenotationForm(Booking.toSTR), '_label->Messages("form.departure-date"), 'class->"form-control", '_id->"to")
+
+	@select(prenotationForm(Booking.roomSTR),
+	Seq(RoomType.lakeView.toString->Messages("room.lake-view"), 
+	RoomType.mountainView.toString->Messages("room.mountain-view"), 
+	RoomType.suite.toString->Messages("room.suite"), 
+	RoomType.single.toString->Messages("room.single")),
+	'_label->Messages("form.room-type"),'class->"form-control" )
+
+	@select(prenotationForm(Booking.treatmentSTR),
+	Seq(Treatment.fb.toString->Messages("treatment.fb"),
+	Treatment.hb.toString->Messages("treatment.hb"), 
+	Treatment.bb.toString->Messages("treatment.bb")),
+	'_label->Messages("form.treatment-type"),'class->"form-control" )
+
+	@inputText(prenotationForm(Booking.adultsSTR), '_label->Messages("form.adults"), 'class->"form-control")
+
+	@inputText(prenotationForm(Booking.bigKidsSTR), '_label->Messages("form.big-kids"), 'class->"form-control")
+
+	@inputText(prenotationForm(Booking.smallKidsSTR), '_label->Messages("form.small-kids"), 'class->"form-control")
+
+	@inputText(prenotationForm(Booking.infantsSTR), '_label->Messages("form.infants"), 'class->"form-control")
+
+	@textarea(prenotationForm(Booking.notesSTR), '_label->Messages("form.notes"), 'class->"form-control")
+</div>
+<div class="box" id="hidden-discount">
+	<h3>@Messages("form.special-offer-title")</h3>
+	<span></span>
+	@Messages("form.special-offer")
+		@checkbox(prenotationForm(Booking.nonRefundableSTR),  '_label->Messages("form.use-discount"))
+</div>
+<div class="box">
+	<button class="btn btn-default">@Messages("util.book-now")</button>
+</div>
+}
+<script type="text/javascript" src="/assets/javascripts/validation.js"></script>
+}

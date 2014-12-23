@@ -5,28 +5,7 @@
 @import models._
 @import play.api.Logger
 
-
-
 @main(Messages("home.title")) {
-<!--<div class="row slider">
-<div class="col-xs-12 slides-container">
-	<ul class="slides">
-		<li class="slide">
-			<img src="/assets/images/hotel-slide-1.jpg" alt="test">
-			<div class="caption">@Messages("home.caption1")</div>
-		</li>
-		<li class="slide">
-			<img src="/assets/images/hotel-slide-2.jpg" alt="test">
-			<div class="caption">@Messages("home.caption2")</div>
-		</li>
-		<li class="slide">
-			<img src="/assets/images/hotel-slide-3.jpg" alt="test">
-			<div class="caption">@Messages("home.caption3")</div>
-		</li>
-	</ul>
-</div>
-</div>
--->
 <div class="row">
 @common.carousel(
 	("/assets/images/hotel-slide-1.jpg", Messages("home.caption1")),
@@ -43,7 +22,7 @@
 
 <div class="row box-container">
 <div class="col-sm-4">
-	@common.box(Html(""))(Messages("home.check-in-title")) {
+	@common.box(Html("../../../public"))(Messages("home.check-in-title")) {
 	<img src="/assets/images/breakfast.jpg">
 		<div>@Html(Messages("home.check-in"))</div>
 		<div class="row margined">
