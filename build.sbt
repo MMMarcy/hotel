@@ -7,11 +7,9 @@ scalaVersion := "2.11.4"
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 libraryDependencies ++= Seq(
-  jdbc,
-  anorm,
   cache,
   filters,
-   "org.apache.commons"      %  "commons-email"               % "1.3.2" 
+  "org.apache.commons"      %  "commons-email"               % "1.3.2" 
 )
 
 libraryDependencies ++= Seq (
@@ -27,4 +25,6 @@ includeFilter in (Assets, LessKeys.less) := "*.less"
 
 excludeFilter in (Assets, LessKeys.less) := "_*.less"
 
-pipelineStages := Seq(digest, gzip)
+includeFilter in uglify := GlobFilter("javascripts/*.js")
+
+pipelineStages := Seq(rjs, uglify, digest, gzip)
