@@ -1,7 +1,6 @@
 logs
 project/project
 project/target
-conf/security.conf
 target
 tmp
 .history
