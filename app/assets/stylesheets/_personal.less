@@ -409,6 +409,27 @@ hr{
 }
 
 
+.period-holder{
+	&:hover{
+		background-color: lighten(@light-orange, 35%);
+	}
+	:nth-child(2){
+		text-align: right;
+	}
+	:nth-child(1){
+		font-weight: bold;
+	}
+	@media (max-width: @screen-md) {
+		border-bottom: 1px solid @light-gray;
+	}
+	@media (min-width: @screen-sm) {
+		padding: 10px;
+		:nth-child(1){
+			width: 10%;
+			text-align: center;
+		}
+	}
+}
 
 
 

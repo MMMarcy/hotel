@@ -10,7 +10,7 @@ String.prototype.endsWith = function(suffix) {
 var CurCheck = $("#disclaimer-acceptance");
 var CurSel = $("#sel-currency");
 var CurBtn = $("#btn-currency");
-var Values = $(".val");
+var Values = $(".moneyValue");
 //var ValuesBKP = Values.clone(true,true);
 
 
@@ -60,7 +60,7 @@ CurBtn.click(function() {
                 var suffix = to();
                 if (suffix == "eur")
                     suffix = "€";
-                $(this).html((price * rate).toFixed(2) + " " + suffix);
+                $(this).html((price * rate).toFixed(0) + " " + suffix);
             });
         }
     });
