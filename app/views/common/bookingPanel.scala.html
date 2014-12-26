@@ -13,8 +13,8 @@
 		<div class="col-md-12 dark-bgd">
 			<div class="row">
 				<div class="col-md-3 price-container text-center">
-					from <span id="priceLabel">@PriceObject.map(room)(Treatment.bb)(new MonthDay())</span>€
-					<p>Per night per person</p>
+					@Messages("price.from") <span id="priceLabel">@PriceObject.map(room)(Treatment.bb)(new MonthDay())</span>€
+					<p>@Messages("price.per-night-per-person")</p>
 					<div class="price-corner tl"></div>
 					<div class="price-corner tr"></div>
 					<div class="price-corner bl"></div>

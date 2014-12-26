@@ -6,7 +6,7 @@ import play.api.i18n._
 object UtilObject {
 
   val ancoraCoord = ("Hotel Ancora","hotel", 45.574867F, 10.70715F)
-  val parkCoord = ("Parking","park", 45.575467F, 10.70815F)
+  val parkCoord = ("Parking","park", 45.57634368F, 10.71388274F)
 
   def format(float: Float): String = {
     val strBuild = new StringBuilder(f"$float%-9.2f ")

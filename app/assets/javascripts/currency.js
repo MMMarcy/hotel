@@ -65,3 +65,14 @@ CurBtn.click(function() {
         }
     });
 });
+
+
+
+$(function(){
+    var min = 0;
+    $(".period-holder").each(function(){
+        if($(this).outerHeight(true) > min)
+            min = $(this).outerHeight(true);
+        console.log(min);
+    }).css("height", min+"px");
+});

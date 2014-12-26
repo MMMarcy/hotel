@@ -146,7 +146,17 @@ parking.label=Parcheggio custodito
 parking.description=Lo staff del nostro hotel è consapevole dell''inportanza della sicurezza delle macchine dei nostri clienti. Per questa ragione abbiamo deciso di affittare un parcheggio custodito 24 ore su 24 in modo da garantire la massima sicurezza. Esso è collocato a circa 500m dall''hotel, ma per il carico e lo scarico dei bagagli è disponibile un parcheggio temporaneo distante appena 30m dall''hotel. In questo modo i bagagli pesanti non saranno più un problema.
 
 
+#BOOKING PANEL ----------
+price.from=A partire da
+price.per-night-per-person=Per notte per persona
 
+#ROOMS FACILITIES ------
+room.facilities=Servizi della camere
+room.privete-bathroom=Bagno privato
+room.television=Televisione satellitare
+room.air-conditioning=Aria condizionata
+room.safe=Cassaforte
+room.telephone=Telefono
 
 
 #ROOMS -------------------

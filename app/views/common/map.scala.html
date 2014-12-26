@@ -16,27 +16,31 @@
 	}
 
       function initialize@{compName}() {
-      	const canvas = $("#@compName");
-		canvas.height((canvas.parent().width() * @ratio)+"px");
-		const latLng = new google.maps.LatLng(@coords(0)._3, @coords(0)._4);
+      	var canvas = $("#@compName");
+      	canvas.height((canvas.parent().width() * @ratio)+"px");
+
+      	var bounds = new google.maps.LatLngBounds();
+		var latLng = new google.maps.LatLng(@coords(0)._3, @coords(0)._4);
 
         var mapOptions = {
-          center: latLng,
-          zoom: @zoom
+          center: latLng
         };
         var map = new google.maps.Map(canvas[0],
             mapOptions);
 
+        var loc;
         @for(coord <- coords){
-	        var @coord._2 = new google.maps.Marker({
-			    position: new google.maps.LatLng(@coord._3, @coord._4),
-			    title: "@coord._1"
+        	loc = new google.maps.LatLng(@coord._3, @coord._4);
+        	new google.maps.Marker({
+			    position: loc,
+			    title: "@coord._1",
+			    map: map
 			});
-	        @{coord._2}.setMap(map);
-
+        	bounds.extend(loc);
 	    }
+    	map.fitBounds(bounds);
+		map.panToBounds(bounds); 
       }
-      //google.maps.event.addDomListener(window, 'load', initialize);
       @if(!hidden){
       	initialize@{compName}();
 

@@ -138,7 +138,18 @@ error.error-page=We are sorry for this :(. Please try again later.
 
 
 
+#BOOKING PANEL ----------
+price.from=From
+price.per-night-per-person=Per night per person
 
+
+#ROOMS FACILITIES ------
+room.facilities=Room Facilities
+room.privete-bathroom=Private bathroom
+room.television=Television
+room.air-conditioning=Air Conditioning
+room.safe=Safe
+room.telephone=Telephone
 
 
 #ROOMS -------------------
