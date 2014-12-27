@@ -55,12 +55,7 @@
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a href='@routes.Application.language("en")'>English</a>
-                            </li>
-                            <li>
-                                <a href='@routes.Application.language("it")'>Italiano</a>
-                            </li>
+                            @Html(LanguageHandlerObject.printLanguages)
                         </ul>
                     </div>
                 </div>

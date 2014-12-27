@@ -13,6 +13,18 @@ object UtilObject {
   val discountPercentage = Play.current.configuration.getInt("discount.percentage").get
   val discountForMeals = Play.current.configuration.getInt("discount.mealsForGuests").get
 
+
+  def createStringForDatePickerLocalization(implicit lang: Lang): String = {
+    val builder = new StringBuilder("ui/i18n/datepicker-")
+    val countryString = lang.language match {
+      case "en" => "en-GB"
+      case _    => lang.language
+    }
+    builder.append(countryString)
+    builder.append(".js")
+    builder.toString()
+  }
+
   def format(float: Float): String = {
     val strBuild = new StringBuilder(f"$float%-9.2f ")
     strBuild.append("€")

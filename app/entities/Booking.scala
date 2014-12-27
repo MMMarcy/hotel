@@ -4,10 +4,20 @@ import play.api.i18n._
 import scala.util.Properties
 import models.UtilObject
 
-case class Booking(from: String, to: String, adults: Int, bigKids: Int,
-  smallKids: Int, infants: Int, treatment: String, room: String,
-  email: String, phone: String, firstName: String, lastName: String, 
-  nonRefundable: Boolean, notes: Option[String]) {
+case class Booking( from: String,
+                    to: String,
+                    adults: Int = 1,
+                    bigKids: Int = 0,
+                    smallKids: Int = 0,
+                    infants: Int = 0,
+                    treatment: String,
+                    room: String,
+                    email: String,
+                    phone: String,
+                    firstName: String,
+                    lastName: String,
+                    nonRefundable: Boolean,
+                    notes: Option[String] = None) {
 
   def summary(implicit lang: Lang): String = {
     val str = new StringBuilder()
@@ -72,7 +82,7 @@ case class Booking(from: String, to: String, adults: Int, bigKids: Int,
     str.append(Booking.newLine)
 
     //Discount
-    str.append(Messages("form.use-discount"))
+    str.append(Messages("form.use-discount", UtilObject.discountPercentage))
     if (nonRefundable)
       str.append(": " + Messages("form.true"))
     else
@@ -84,9 +94,7 @@ case class Booking(from: String, to: String, adults: Int, bigKids: Int,
     str.append(": " + notes.getOrElse{Messages("form.no-notes")})
     str.append(Booking.newLine)
     
-    str.toString
-
-
+    str.toString()
   }
 
 }

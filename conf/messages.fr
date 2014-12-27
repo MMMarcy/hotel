@@ -1,0 +1,224 @@
+#NAVBAR ---------------
+
+nav.languages=Languages
+
+#HOME -----------------
+
+home.title=Welcome to Hotel Ancora
+home.subtitle=The perfect place to relax
+home.home=Home
+home.home-sub=Welcome
+home.accomodation=Accomodation
+home.accomodation-sub=rates & reservations
+home.services=Services
+home.services-sub=What we have to offer
+home.events=Around us
+home.events-sub=Garda & surroundings
+home.contact=Contact
+home.contact-sub=get in touch
+home.caption1=Caption1
+home.caption2=Caption2
+home.caption3=Caption3
+home.check-in-title=Check-in & Check-out
+home.check-in=Check-in is made between 11.00 and 22.00 during summer. Check-out is made at 11.00 maximun in order to allow the room to be cleaned for our next guest.
+home.services-short-title=Our services in brief
+home.services-short-wifi=WiFi connection
+home.services-short-spa=SPA convention
+home.services-short-parking=Custodied parking
+home.services-short-downtown=Located in the hearth of Garda
+home.services-short-restaurant-bar=Restaurant and Bar with LakeView
+home.direct-prenotation=Every non-refundable direct prenotation longer than {0} nights grants a {1}% discount. Click here to discover more.
+
+home.widget-1-title=A brief description
+home.widget-1-body=Hotel Ancora is a small Hotel situated in the heart of Garda. This peculiar position allows our customer to reach every point of interest in minutes. The lake, which is 15 meters away from the entrance, offers breathtaking landscapes and an enjoyable breeze during hot days. In addition, our in-house restaurant and bar are lake front and let our customers to have a perfect relaxing time while enjoying the magin essence of Garda, which has captured the attention of people for Millenia thanks to its beauty.
+
+home.widget-2-title=Site map
+
+#ACCOMODATION -----------
+accomodation.title=Our rooms and prices
+accomodation.special-offer-title=Special offer
+accomodation.special-offer=Every prenotation that is longer than {0} nights can obtain a {1}% discount on the final prices (beverage excluded). This option. however implies that the prenoation loses its refundability. If additional information are needed please contact our staff through email or phone.
+accomodation.rules=Our rules
+accomodation.check-in-title=Check-in
+accomodation.check-in=Check-in is performed from 10.00 to 21.00 in summer and from 10.00 to 17.00 in winter. Although we are flexible on this times we would like you to comunicate any delay in advance through email, phone, or the special notes space provided during the booking. However, bear in mind the during summer rooms' keys will be handed on around 12.00 in order to you to find a clean and tidy room.
+accomodation.check-out-title=Check-out
+accomodation.check-out=Check-out is performed strictly before 10.00. This choice is made for allowing our next guests to find a clean and tidy room. The late check-out fee is 10? per person. For special cases, e.g. special needs persons, this rule can be bended, but we would like you to communicate these information beforehand through email, phone, or the special needs box offered while booking.
+accomodation.timetables-title=Timetables
+accomodation.timetables=The hotel is open from 07.00 until 00.00 in summer and from 07.00 until 18.00 in winter. Breakfast is served from 07.30 to 10.30. Launch is available from 11.30 to 14.00. Dinner from 18.30 until 19.30; where live music is programmed dinner is served from 18.30 until 19.00.
+
+#CONTACTS ----------------
+contacts.label=How to reach us
+contacts.address-label=Address
+contacts.address-real=Via A. Manzoni 7, 37016, Garda (Verona), Italy
+contacts.phone=Phone
+
+
+#OPERATION SUCCESSFUL
+operation.successful-title=Everything went fine
+operation.successful=We received your prenotation and we also sent to your email a summary of your prenotation. You will be contacted by our staff as soon as possible with the best offer that matches your requests. In the meantime we wish you a wonderful day.
+operation.footer=Hotel ancora staff
+
+
+#PRICES -----------------
+prices=Our prices
+price.convert=Convert
+
+price.today=Our prices in this period
+price.intro-brief=All prices are indicated for a bed & breakfeast treatment. For a more comprehensive list click more info here below.
+
+price.disclaimer=Prices can be converted to one of the following currencies. However, it is important to understand that the actual converted prices shown in this page may not correspond to the rate applied by your bank in case of an electronic payment. Furthermore all the cash payments shall be done in Euro currency. If you agree with this terms please check the following checkbox
+
+periods=Periods
+
+price.modal-title={0}% discount available
+price.modal-body=Stays that are longer that {0} nights have access to a {1}% discount on the final total price for the room. However, if you agree to obtain such discount the prenotation will be non-refundable. This offer does not include beverages.
+price.modal-discard=Don''t apply the discount
+price.modal-accept=Apply the discount
+prices.special-info=Other helpful information
+prices.discount-infants=Discount for 0 - 2 years old children
+prices.discount-small-kids=Discount for 3 - 6 years old children
+prices.discount-big-kids=Discount for 7 - 11 years old children
+prices.supplement=Supplement for room upgrade (1 person in double room)
+
+
+#FACILITIES ----------------
+facilities=Our facilities
+
+bar=Cocktail bar
+bar.desc=Our lake front American Bar offers an amazing atmosphere thank to our friendly staff and the beauty of the surroundings. Furthermore, we offer a big variety of wines, cocktails and beers that can make the time even more enjoyable. During the summer period the American singer Rod Olson is going to perform live to revive with you masterpieces that have define music''s history. During the exhibithions dinner for Hotel guests will be served in the dining room.
+
+restaurant=Restaurant
+restaurant.desc=Our Restaurant offers a big variety of Italian Homemade food that varies from the Pizza to Lake fish dinners. We offer menus for children that include Milanese cutlet with french fries. Hotel guests that will dine in our Restaurant regardless of their board plan will access a {0}% discount.
+
+gardacqua.association=SPA association
+gardacqua.short=Hotel Ancora is a proud partner of Gardacqua, a luxury SPA center situated in the hills of Garda. It offers 4 Swimming pools, 6 different kinds of sauna, a gym and soccer and beach-volley playgrounds. Hotel guests that decide to stay for more that 2 nights have access to free entrance tickets, while the others can obtain tickets at the reception for highly reduced rates.
+
+parking.label=Custodied parking
+parking.description=At the Hotel Ancora we understand how important is the safety of our guests'' cars. For this reason we decide to rent some parking slots in a custodied parking that is only about 500 meters away from the Hotel. However, at arrival and departure times our guests are allowed to acces the parking spots reserved for these purposes that are only 20 meters away from the Hotel. This way heavy luggages won''t be a poblem.
+
+#MAIL & PRENOTATION FORM
+form.first-name=First Name
+form.last-name=Last Name
+form.phone=Phone number
+form.email=Email address
+form.arrival-date=Arrival Date
+form.departure-date=Departure Date
+form.room-type=Room type
+form.treatment-type=Treatment type
+form.adults=Number of adults
+form.big-kids=Number of children between 6 an 11
+form.small-kids=Number of children between 3 and 5
+form.infants=Number of children between 0 and 2
+form.use-discount=Use the {0}% discount
+form.personal-information=Some personal information.
+form.holiday-information=About your holiday
+form.special-offer-title=Special offer
+form.special-offer=Prenotations longer than {0} nights have access to a {1}% discount. However this discount makes the prenotation non-refundable. A further confirmation will be asked by our staff once your prenotation will be processed.
+form.true=Yes
+form.false=No
+form.notes=Special notes
+form.no-notes=No notes specified
+
+mail.object=We received your prenotation
+mail.heading=Dear Ms. / Mr. {0},
+mail.intro=We are delighted that you have chosen our Hotel for your holiday. This email has been sent in order to confirm that your prenotation has been received and will be processed as soon as possible by our staff. In the meantime we hope you have a great day.
+
+mail.greetings=Thank you again for choosing us, best regards
+mail.summary-of-prenotation=In the following lines you can find the summary of your prenotation.
+
+#ERRORS
+error.required=This field must be fullfilled
+error.email=Please insert a valid email address
+error.min=Please insert a number greater or equal than {0}
+error.number=Please insert a number
+error.page-not-found-title=The page was not found
+error.page-not-found=We are truly sorry, but the address <strong>"{0}"</strong> is not avaialble. To surf our website please use the menus.
+error.error-page-title=Oh snap, an error occurred
+error.error-page=We are sorry for this :(. Please try again later.
+
+
+
+#BOOKING PANEL ----------
+price.from=From
+price.per-night-per-person=Per night per person
+
+
+#ROOMS FACILITIES ------
+room.facilities=Room Facilities
+room.privete-bathroom=Private bathroom
+room.television=Television
+room.air-conditioning=Air Conditioning
+room.safe=Safe
+room.telephone=Telephone
+
+
+#ROOMS -------------------
+room.our-rooms=Our Rooms
+room.description=Room Description
+
+room.lake-view=Lake View room
+room.lake-view-desc=Our Lake Views room give you the opportunity to have the beauty of the lake always in front of you. Every Lake View room has access to a shared balcony on which is possible to spend amazing quality time observing the lake and its shores or simply the dynamics of Garda, which are a perfect mix of tradition and modernity. The rooms are exposed to west and therefore the morning Sun will not ruin your sleeping time.
+
+room.mountain-view=Mountain View room
+room.mountain-view-desc=Our Mountain View rooms offer a view on Garda''s downtown and the Rocca, the hill that is on Garda''s south border. Every room has a private bathroom with a shower, television and air conditioning that will help during hot summer days. Beds can be arranged in a single double sized bed or divided in two normal size ones. Room cleaning is performed every morning.
+
+room.suite=Suite
+room.suite-desc=Our suite is located on the top floor of our Hotel in order to allow its guests to have a breathtaking 360 degrees view of the Lake and of Garda. The room, as it is possible to see through the gallery has a private terrace of about 10 square meters in which is possible to tan, dine, etc. etc. in complete privacy. The suite contains three bed arrenged in a  2 plus 1 configuration, but can be easily arrenged on a  1 plus 1 plus 1 configuration on request.
+
+room.single=Single room
+room.single-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+room.type=Room Type
+
+#SOCIAL
+social.label=Hotel Ancora is also social
+
+#SURROUNDINGS
+surroundings.art-history=Art & History
+surroundings.for-families=Fun for the whole family
+surroundings.relax=If you are looking for relax...
+surroundings.movida=Where to spend amazing nights
+
+surroundings.verona=Verona
+surroundings.verona-desc=Garda is located about 30Km from Verona, one of the most historical city of Italy and the background of maybe the greatest Shakespeare''s drama "Romeo & Juliet". In Verona''s street is possible to admire the perfect blend of Romanic and Reinassence style and, why not, go to shopping in Via Mazzini before spending some quality time in Piazza Erbe or Piazza Bra drinking an appetizer. Verona of course has much more to offer, and to discover it follow the following link.
+
+surroundings.opera=Opera
+surroundings.opera-desc=Verona is also the worldwide capital of the Opera. In fact, from the amazing theatre offered by the Arena it is possible to witness all the best plays ever written. From Rigoletto, to Aida and many more. Tickets must be booked beforehand due to the high demand. Therefore, we suggest our customers to check the fololowing websites to see the schedule of plays, the availability and the prices applied for the different kind of seats. The late return from Verona it''s not a problem since our Hotel is provided with a night entrance.
+
+surroundings.lake=Garda Lake
+surroundings.lake-desc=Without traveling to Verona, a big variety of historical and artistic point of interest are available in all the Garda Lake shores. In fact, this area is inhabited from the Middle Paleolithic and was one of the most important nodes at the time of the Roman Empire. For discover more about our history and art rich land we suggest you to follow the next link.
+
+surroundings.caneva=Caneva
+surroundings.caneva-desc=The Verona''s shore of the Lake houses one of the biggest water parks in Europe. The name of this place is CanevaWorld and contains attraction for all the family, even the younger members. It is situated 15Km south of Garda and it is easy to reach. For more information click on the button below.
+
+surroundings.gardaland=Gardaland
+surroundings.gardaland-desc=The area has also a traditional amousement park that is one of the bigget in Italy. Gardaland it''s the perfect place for spending amazing day all together and have a lot of fun. Timetables and prices are available at gardaland official website which is accessible through the following link.
+
+surroundings.zoo=Parco Natura Viva
+surroundings.zoo-desc=Another interesting option for the whole family is the Parco Natura Viva. It is both a traditional zoo and it also offers the opportunity to simulate a safari with youor own car. The experience of being so close to the animals is really thrilling, especially for the younger ones. For more info click the button below.
+
+surroundings.enogastronomia=Food and Wine
+surroundings.enogastronomia-desc=The lake area has a lot to offer when it comes to Food and Wine. In fact our land has a long tradition that includes lake fishes, olive oil and tipical wines. It is possible to spend the day in organized tours traveling in the best "Cantine" and have samples of high end wines and tipical food. If you are looking to explore the true essence of this land this is probably the best choice. For more info see the link below.
+
+surroundings.sigurta=Parco Sigurtà
+surroundings.sigurta-desc=Parco Sigurtà is one of the most famous botanical garden all over Europe. Thanks to the Lake particular climate the garden contains both mediterranean and sub-alpine flora. The park also contains some historical building and offers the perfect place for a full immersion in the nature.
+
+#TREATMENT -------------
+treatment.bb=Bed and Breakfast
+treatment.hb=Half-Board
+treatment.fb=Full-Board
+
+
+#UTILITIES -------------
+util.discover-more=Discover more
+util.your-email=Your email
+util.arrival-date=Arrival date
+util.departure-date=Departure date
+util.book-now=Book now
+util.more-info=More info
+util.get-discount=It's easy
+
+
+
+
+

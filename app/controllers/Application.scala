@@ -13,7 +13,7 @@ import play.api.Play.current
 
 object Application extends Controller {
 
-  val prenotationForm = Form {
+  val bookingForm = Form {
     mapping(
       Booking.fromSTR -> nonEmptyText,
       Booking.toSTR -> nonEmptyText,
@@ -46,6 +46,7 @@ object Application extends Controller {
   def showRoom(roomType: String) = Action { implicit request =>
     Ok(views.html.pages.room(UtilObject.stringToRoomType(roomType.toLowerCase)))
   }
+
   def aroundUs = Action { implicit request =>
     Ok(views.html.pages.aroundus())
   }
@@ -55,20 +56,19 @@ object Application extends Controller {
   }
 
   def sendEmail = Action { implicit request =>
-    prenotationForm.bindFromRequest.fold(
+    bookingForm.bindFromRequest.fold(
       formWithErrors => {
         // binding failure, you retrieve the form containing errors:
         BadRequest(views.html.pages.prenotationForm(formWithErrors))
       },
-      prenotation => {
-        //TODO:successful page
-        Mailer.notifyPrenotation(prenotation)
+      booking => {
+        Mailer.notifyPrenotation(booking)
         Ok(views.html.pages.bookingSuccessful())
       })
   }
 
   def showForm = Action { implicit request =>
-    Ok(views.html.pages.prenotationForm(prenotationForm))
+    Ok(views.html.pages.prenotationForm(bookingForm))
   }
 
   def language(code: String) = Action { implicit request =>
