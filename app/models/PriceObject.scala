@@ -50,6 +50,47 @@ object PriceObject {
     stringBuilder.toString()
   }
 
+  def printPeriods = {
+    val stringBuilder = new StringBuilder()
+    periods.zip(periodsLabels).foreach { case (period, label) =>
+      stringBuilder.append( """<tr class="period-holder" > """)
+      stringBuilder.append("<td>")
+      stringBuilder.append(label)
+      stringBuilder.append("</td>")
+
+      stringBuilder.append("<td>")
+      period.intervals.foreach { interval =>
+        stringBuilder.append(interval._1.toString("dd/MM"))
+        stringBuilder.append(" - ")
+        stringBuilder.append(interval._2.toString("dd/MM"))
+        stringBuilder.append("<br/>")
+      }
+      stringBuilder.append("</td>")
+      stringBuilder.append("</tr>")
+    }
+    stringBuilder.toString()
+  }
+
+  def printRow(room: RoomType, treatment: Treatment): String = {
+    Cache.getAs[String](PRICESTRING + room.toString + treatment.toString) match {
+      case Some(str) => str
+      case None => {
+        val strbld = new StringBuilder()
+        val partialFun = map(room)(treatment)(_)
+        periods.foreach(period => {
+          val day = period.intervals.head._1
+          strbld.append( """<div class="col-xs-1 val text-center">""")
+          strbld.append(UtilObject.format(partialFun(day)))
+          strbld.append("</div>")
+        })
+        val res = strbld.toString()
+        Cache.set(PRICESTRING + room.toString + treatment.toString, res, 43200)
+        res
+      }
+    }
+
+  }
+
   def map(room: RoomType)(treatment: Treatment)(day: MonthDay): Float = {
 
     (day, room, treatment) match {
@@ -117,48 +158,6 @@ object PriceObject {
       case (d, r, t) if A.contains(d) && r == RoomType.single && t == Treatment.bb => 39.0F
       case (d, r, t) if A.contains(d) && r == RoomType.single && t == Treatment.hb => 57.0F
       case (d, r, t) if A.contains(d) && r == RoomType.single && t == Treatment.fb => 69.0F
-    }
-
-  }
-
-  def printPeriods = {
-    val stringBuilder = new StringBuilder()
-    periods.zip(periodsLabels).foreach { case (period, label) =>
-      stringBuilder.append( """<tr class="period-holder" > """)
-      stringBuilder.append("<td>")
-      stringBuilder.append(label)
-      stringBuilder.append("</td>")
-
-      stringBuilder.append("<td>")
-      period.intervals.foreach { interval =>
-        stringBuilder.append(interval._1.toString("dd/MM"))
-        stringBuilder.append(" - ")
-        stringBuilder.append(interval._2.toString("dd/MM"))
-        stringBuilder.append("<br/>")
-      }
-      stringBuilder.append("</td>")
-
-        stringBuilder.append("</tr>")
-    }
-    stringBuilder.toString()
-  }
-
-  def printRow(room: RoomType, treatment: Treatment): String = {
-    Cache.getAs[String](PRICESTRING + room.toString + treatment.toString) match {
-      case Some(str) => str
-      case None => {
-        val strbld = new StringBuilder()
-        val partialFun = map(room)(treatment)(_)
-        periods.foreach(period => {
-          val day = period.intervals.head._1
-          strbld.append( """<div class="col-xs-1 val text-center">""")
-          strbld.append(UtilObject.format(partialFun(day)))
-          strbld.append("</div>")
-        })
-        val res = strbld.toString()
-        Cache.set(PRICESTRING + room.toString + treatment.toString, res, 43200)
-        res
-      }
     }
 
   }

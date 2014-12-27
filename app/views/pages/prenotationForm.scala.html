@@ -60,8 +60,8 @@
         <div class="box" id="hidden-discount">
             <h3>@Messages("form.special-offer-title")</h3>
             <span></span>
-            @Messages("form.special-offer")
-            @checkbox(prenotationForm(Booking.nonRefundableSTR), '_label -> Messages("form.use-discount"))
+            @Messages("form.special-offer",UtilObject.discountMinDays,UtilObject.discountPercentage)
+            @checkbox(prenotationForm(Booking.nonRefundableSTR), '_label -> Messages("form.use-discount",UtilObject.discountPercentage))
         </div>
         <div class="box">
             <button class="btn btn-default">@Messages("util.book-now")</button>

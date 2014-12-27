@@ -29,7 +29,7 @@ home.services-short-spa=Convenzione con una SPA (a partire da Marzo 2015)
 home.services-short-parking=Parheggio custodito
 home.services-short-downtown=Situato nel cuore di Garda
 home.services-short-restaurant-bar=Ristorante e bar affacciati sul Lago
-home.direct-prenotation=Tutte le prenotazioni più lunghe di 3 notti hanno accesso a uno sconto opzionale del 10%, ma diventando non rimborsabili. Clicca qui per scoprire di più.
+home.direct-prenotation=Tutte le prenotazioni più lunghe di {0} notti hanno accesso a uno sconto opzionale del {1}%, ma diventando non rimborsabili. Clicca qui per scoprire di più.
 
 home.widget-1-title=Su di noi...
 home.widget-1-body=L''Hotel Ancora è un piccolo Hotel situato nel cuore storico di Garda. Questa particolare posizione permettere di raggiungere tutti i punti di interesse nel giro di minuti. Il lago è situato a circa 15 metri dall''entrata e dal nostro piazzale è possibile ammirare paesaggi mozzafiato e godere di una rinfrescante brezza nel periodo estivo. I nostri bar e ristorante sono situati direttamente sul lago e offrono ai nostri clienti momenti spensierati e rilassanti immersi nella magica essenza di Garda, che ha streagato molte popolazioni nel corso dei millenni.
@@ -40,7 +40,7 @@ home.widget-2-title=Mappa del sito
 #ACCOMODATION -----------
 accomodation.title=Camere e prezzi
 accomodation.special-offer-title=Offerta speciale
-accomodation.special-offer=Ogni prenotazione più lunga di 3 notti può ottenere uno sconto opzionale del 10% sul przzo finale (bevande escluse). Tuttavia, una prenotazione che gode di questa offerta NON è rimborsabile. Per ulteriori informazioni la preghiamo di contattare il nostro staff via email o telefono.
+accomodation.special-offer=Ogni prenotazione più lunga di {0} notti può ottenere uno sconto opzionale del {1}% sul przzo finale (bevande escluse). Tuttavia, una prenotazione che gode di questa offerta NON è rimborsabile. Per ulteriori informazioni la preghiamo di contattare il nostro staff via email o telefono.
 accomodation.rules=Le nostre regole
 accomodation.check-in-title=Check-in
 accomodation.check-in=Il Check-in è effettuato dalle 10.00 alle 21.00 nel periodo estivo e dalle 10.00 alle 17.00 in quello invernale. Tuttavia, previa comunicazione questi orari possono essere estesi. Le chiavi delle camere sono consegnate approssimativamente alle 12.00 del giorno di arrivo, in modo che possiate trovare una camera pulita e in ordine.
@@ -78,11 +78,11 @@ form.adults=Numero di adulti
 form.big-kids=Numero di ragazzi fra 6 e 11 anni
 form.small-kids=Numero di bambini fra 3 e 5 anni
 form.infants=Numero di bambini fra 0 e 2 anni
-form.use-discount=Applica il 10% di sconto
+form.use-discount=Applica il {0}% di sconto
 form.personal-information=Alcune informazioni personali
 form.holiday-information=Rigurdo la vostra vacanza...
 form.special-offer-title=Offerta speciale
-form.special-offer=Le prenotazioni più lunghe di 3 settimane hanno accesso a il 10% di sconto. Tuttavia, questo sconto rende la prenotazione non rimborsabile. Un ulteriore conferma verrà chiesta dal nostro staff nel momento in cui la prenotazione verrà elaborata.
+form.special-offer=Le prenotazioni più lunghe di {0} giorni hanno accesso a il {1}% di sconto. Tuttavia, questo sconto rende la prenotazione non rimborsabile. Un ulteriore conferma verrà chiesta dal nostro staff nel momento in cui la prenotazione verrà elaborata.
 form.true=Si
 form.false=No
 form.notes=Informazioni aggiuntive
@@ -126,8 +126,8 @@ prices.supplement=Supplemento per camera doppia ad uso singolo
 
 periods=Periodi
 
-price.modal-title=Accesso a il 10% di sconto
-price.modal-body=Permanenze di 4 o più notti hanno accesso a uno sconto opzionale del 10% che,però, rende la prenotazione non rimborsabile. L''offerta non include le bevande consumate durante la permanenza.
+price.modal-title=Accesso al {0}% di sconto
+price.modal-body=Permanenze di {0} o più notti hanno accesso a uno sconto opzionale del {1}% che,però, rende la prenotazione non rimborsabile. L''offerta non include le bevande consumate durante la permanenza.
 price.modal-discard=Non sono interessato,
 price.modal-accept=Si grazie, desidero usufruire dello sconto.
 
@@ -138,7 +138,7 @@ bar= Il nostro Bar
 bar.desc=La terrazza del nostro bar è direttamente affacciata sul lago. Alcuni tavoli sono posti a circa 3 metri da esso, creando la giusta atmosfera per godersi il proprio drink immerso nella bellezza paesaggistica che il Lago offre. Inoltre, il nostro cordiale staff saprà consigliarvi al meglio su quali sono i nostri vini migliori, birre e cocktails. Infine, nel periodo estivo il cantante Americano Rod Olson allieterà le vostre serate con interpretazioni di brani che hanno fatto la storia della musica.
 
 restaurant=Il nostro ristorante
-restaurant.desc=Anche il nostro ristorante, come il bar, è affacciato sul Lago. Il nostro menù include solamente piatti freschi che spaziano da un''ampia scelta di pizze fino ai più prelibati pesci lacustri. Sono presenti anche piatti adatti ai  clienti più giovani. I clienti dell''hotel che non usufruiscono di pernottamenti di mezza pensione o pensione completa hanno accesso al 10% di sconto qualora decidano di pranzare o cenare nel nostro ristorante.
+restaurant.desc=Anche il nostro ristorante, come il bar, è affacciato sul Lago. Il nostro menù include solamente piatti freschi che spaziano da un''ampia scelta di pizze fino ai più prelibati pesci lacustri. Sono presenti anche piatti adatti ai  clienti più giovani. I clienti dell''hotel che non usufruiscono di pernottamenti di mezza pensione o pensione completa hanno accesso al {0}% di sconto qualora decidano di pranzare o cenare nel nostro ristorante.
 
 
 gardacqua.association=Gardacqua SPA

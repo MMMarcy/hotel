@@ -1,12 +1,17 @@
 package models
 
 import RoomType._
+import play.api.Play
 import play.api.i18n._
 
 object UtilObject {
 
   val ancoraCoord = ("Hotel Ancora","hotel", 45.574867F, 10.70715F)
   val parkCoord = ("Parking","park", 45.57634368F, 10.71388274F)
+
+  val discountMinDays = Play.current.configuration.getInt("discount.days").get
+  val discountPercentage = Play.current.configuration.getInt("discount.percentage").get
+  val discountForMeals = Play.current.configuration.getInt("discount.mealsForGuests").get
 
   def format(float: Float): String = {
     val strBuild = new StringBuilder(f"$float%-9.2f ")

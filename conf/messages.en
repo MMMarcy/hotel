@@ -27,7 +27,7 @@ home.services-short-spa=SPA convention
 home.services-short-parking=Custodied parking
 home.services-short-downtown=Located in the hearth of Garda
 home.services-short-restaurant-bar=Restaurant and Bar with LakeView
-home.direct-prenotation=Every non-refundable direct prenotation longer than 3 nights grants a 10% discount. Click here to discover more.
+home.direct-prenotation=Every non-refundable direct prenotation longer than {0} nights grants a {1}% discount. Click here to discover more.
 
 home.widget-1-title=A brief description
 home.widget-1-body=Hotel Ancora is a small Hotel situated in the heart of Garda. This peculiar position allows our customer to reach every point of interest in minutes. The lake, which is 15 meters away from the entrance, offers breathtaking landscapes and an enjoyable breeze during hot days. In addition, our in-house restaurant and bar are lake front and let our customers to have a perfect relaxing time while enjoying the magin essence of Garda, which has captured the attention of people for Millenia thanks to its beauty.
@@ -37,7 +37,7 @@ home.widget-2-title=Site map
 #ACCOMODATION -----------
 accomodation.title=Our rooms and prices
 accomodation.special-offer-title=Special offer
-accomodation.special-offer=Every prenotation that is longer than 3 nights can obtain a 10% discount on the final prices (beverage excluded). This option. however implies that the prenoation loses its refundability. If additional information are needed please contact our staff through email or phone.
+accomodation.special-offer=Every prenotation that is longer than {0} nights can obtain a {1}% discount on the final prices (beverage excluded). This option. however implies that the prenoation loses its refundability. If additional information are needed please contact our staff through email or phone.
 accomodation.rules=Our rules
 accomodation.check-in-title=Check-in
 accomodation.check-in=Check-in is performed from 10.00 to 21.00 in summer and from 10.00 to 17.00 in winter. Although we are flexible on this times we would like you to comunicate any delay in advance through email, phone, or the special notes space provided during the booking. However, bear in mind the during summer rooms' keys will be handed on around 12.00 in order to you to find a clean and tidy room.
@@ -70,8 +70,8 @@ price.disclaimer=Prices can be converted to one of the following currencies. How
 
 periods=Periods
 
-price.modal-title=10% discount available
-price.modal-body=Stays that are longer that four nights have access to a 10% discount on the final total price for the room. However, if you agree to obtain such discount the prenotation will be non-refundable. This offer does not include beverages.
+price.modal-title={0}% discount available
+price.modal-body=Stays that are longer that {0} nights have access to a {1}% discount on the final total price for the room. However, if you agree to obtain such discount the prenotation will be non-refundable. This offer does not include beverages.
 price.modal-discard=Don''t apply the discount
 price.modal-accept=Apply the discount
 prices.special-info=Other helpful information
@@ -88,7 +88,7 @@ bar=Cocktail bar
 bar.desc=Our lake front American Bar offers an amazing atmosphere thank to our friendly staff and the beauty of the surroundings. Furthermore, we offer a big variety of wines, cocktails and beers that can make the time even more enjoyable. During the summer period the American singer Rod Olson is going to perform live to revive with you masterpieces that have define music''s history. During the exhibithions dinner for Hotel guests will be served in the dining room.
 
 restaurant=Restaurant
-restaurant.desc=Our Restaurant offers a big variety of Italian Homemade food that varies from the Pizza to Lake fish dinners. We offer menus for children that include Milanese cutlet with french fries. Hotel guests that will dine in our Restaurant regardless of their board plan will access a 10% discount.
+restaurant.desc=Our Restaurant offers a big variety of Italian Homemade food that varies from the Pizza to Lake fish dinners. We offer menus for children that include Milanese cutlet with french fries. Hotel guests that will dine in our Restaurant regardless of their board plan will access a {0}% discount.
 
 gardacqua.association=SPA association
 gardacqua.short=Hotel Ancora is a proud partner of Gardacqua, a luxury SPA center situated in the hills of Garda. It offers 4 Swimming pools, 6 different kinds of sauna, a gym and soccer and beach-volley playgrounds. Hotel guests that decide to stay for more that 2 nights have access to free entrance tickets, while the others can obtain tickets at the reception for highly reduced rates.
@@ -109,11 +109,11 @@ form.adults=Number of adults
 form.big-kids=Number of children between 6 an 11
 form.small-kids=Number of children between 3 and 5
 form.infants=Number of children between 0 and 2
-form.use-discount=Use the 10% discount
+form.use-discount=Use the {0}% discount
 form.personal-information=Some personal information.
 form.holiday-information=About your holiday
 form.special-offer-title=Special offer
-form.special-offer=Prenotations longer than 3 nights have access to a 10% discount. However this discount makes the prenotation non-refundable. A further confirmation will be asked by our staff once your prenotation will be processed.
+form.special-offer=Prenotations longer than {0} nights have access to a {1}% discount. However this discount makes the prenotation non-refundable. A further confirmation will be asked by our staff once your prenotation will be processed.
 form.true=Yes
 form.false=No
 form.notes=Special notes
