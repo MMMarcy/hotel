@@ -16,37 +16,40 @@ home.events=Intorno a noi
 home.events-sub=Garda & d''intorni
 home.contact=Contatti
 home.contact-sub=comunica con noi
+
 home.caption1=Caption1
 home.caption2=Caption2
 home.caption3=Caption3
+
 home.check-in-title=Check-in & Check-out
-home.check-in=Il Chech-in è effettuato fra le 11.00 e le 22.00 nel periodo estivo. Il check-out è invece effettuato massimo alle 11.00 per poter permettere ai clienti successivi di accedere a una stanza pulita.
+home.check-in=Il Check-in è effettuato fra le 11.00 e le 22.00 nel periodo estivo e fra le 11.00 e le 17.00 in quello invernale. Il check-out è, invece, effettuato al più tardi alle ore 11.00 per poter garantire un'adeguata pulizia della stanza per i clienti successivi.
 home.services-short-title=I nostri servizi in breve
 home.services-short-wifi=Connessione WiFi
-home.services-short-spa=Convenzione con una SPA
+home.services-short-spa=Convenzione con una SPA (a partire da Marzo 2015)
 home.services-short-parking=Parheggio custodito
 home.services-short-downtown=Situato nel cuore di Garda
-home.services-short-restaurant-bar=Ristorante e bar affacciati sul lago
-home.direct-prenotation=Tutte le prenotazioni più lunghe di 3 notti hanno accesso a uno sconto del 10%, ma perdono la loro rimborsabilità. Clicca qui per scoprire di più
+home.services-short-restaurant-bar=Ristorante e bar affacciati sul Lago
+home.direct-prenotation=Tutte le prenotazioni più lunghe di 3 notti hanno accesso a uno sconto opzionale del 10%, ma diventando non rimborsabili. Clicca qui per scoprire di più.
 
 home.widget-1-title=Su di noi...
-home.widget-1-body=Hotel Ancora è un piccolo Hotel situato nel cuore di Garda. Questa particolare posizione fa si che tutti i punti di interesse siano raggiungibili nel giro di minuti. Il lago è situato a circa 15 metri dall''entrata e offre sia paesaggi mozzafiato e una rinfrescante brezza nel periodo estivo. I nostri bar e ristorante sono situati direttamente sul lago e offrono ai nostri clienti di trascorrere momenti spensierati e rilassanti mentre si gustano la magica essenza di Garda, che ha streagato molte popolazioni nel corso dei millenni.
+home.widget-1-body=L''Hotel Ancora è un piccolo Hotel situato nel cuore storico di Garda. Questa particolare posizione permettere di raggiungere tutti i punti di interesse nel giro di minuti. Il lago è situato a circa 15 metri dall''entrata e dal nostro piazzale è possibile ammirare paesaggi mozzafiato e godere di una rinfrescante brezza nel periodo estivo. I nostri bar e ristorante sono situati direttamente sul lago e offrono ai nostri clienti momenti spensierati e rilassanti immersi nella magica essenza di Garda, che ha streagato molte popolazioni nel corso dei millenni.
 
 home.widget-2-title=Mappa del sito
+
 
 #ACCOMODATION -----------
 accomodation.title=Camere e prezzi
 accomodation.special-offer-title=Offerta speciale
-accomodation.special-offer=Ogni prenotazione più lunga di 3 notti può ottenere uno sconto del 10% sul przzo finale (bevande escluse). Tuttavia, aderire a quest''opzione fà si che la prenotazione perda la sua rimborsabilità. Se dovessero essere necessarie ulteriori informazioni la preghiamo di contattare il nostro staff via Email o telefono.
+accomodation.special-offer=Ogni prenotazione più lunga di 3 notti può ottenere uno sconto opzionale del 10% sul przzo finale (bevande escluse). Tuttavia, una prenotazione che gode di questa offerta NON è rimborsabile. Per ulteriori informazioni la preghiamo di contattare il nostro staff via email o telefono.
 accomodation.rules=Le nostre regole
 accomodation.check-in-title=Check-in
-accomodation.check-in=Il Check-in è effettuato dalle 10.00 alle 21.00 nel periodo estivo e dalle 10.00 alle 17.00 in quello invernale. Tuttavia siamo flessibili riguardo questi orari, ma preferiremmo che qualunque esigenza speciale sia comunicata in anticipo tramite email, telefono o usando lo spazio per le note speciali presente nella pagina delle prenotazioni. Ricordate comunque che le chiavi delle camere saranno consegnate approssimativamente alle 12.00 in modo che possiate trovare una camera pulita e in ordine.
+accomodation.check-in=Il Check-in è effettuato dalle 10.00 alle 21.00 nel periodo estivo e dalle 10.00 alle 17.00 in quello invernale. Tuttavia, previa comunicazione questi orari possono essere estesi. Le chiavi delle camere sono consegnate approssimativamente alle 12.00 del giorno di arrivo, in modo che possiate trovare una camera pulita e in ordine.
 
 accomodation.check-out-title=Check-out
-accomodation.check-out=Il check-out è effettuato tassativamente prima delle 10.00. Questa scelta è atta a far trovare agli altri nostri ospiti una camera pulita e in ordine. Tuttavia, per esigenze speciali, queste regole possono essere leggermente modificate, ma vi chiediamo di comunicarcelo in anticipo. Rompere questa regola comporta un supplemento di 10,00€ per per persona.
+accomodation.check-out=Il check-out è effettuato tassativamente prima delle 10.00 del giorno di partenza. Questa scelta è atta a far trovare agli altri nostri ospiti una camera pulita e in ordine. Tuttavia, per esigenze speciali, queste regole possono essere leggermente modificate, ma vi chiediamo di comunicarcelo in anticipo. Non attenersi a questa regola comporta un supplemento di 10,00€ per per persona.
 
 accomodation.timetables-title=Orari
-accomodation.timetables=L''Hotel apre dalle 07.00 fino alle 00.00 in estate e fino alle 18.00 in inverno. La colazione è servita dalle 7.30 alle 10.30. Pranzo dalle 11.30 alle 14.00. La cena dalle 18.30 alle 19.30, ma nelle serate di musica dal vivo dalle 18.30 alle 19.00.
+accomodation.timetables=L''Hotel apre dalle 07.00 fino alle 00.00 in estate e fino alle 18.00 in inverno. La colazione è servita dalle 7.30 alle 10.30. Pranzo e cena, qualora usufruiate del trattamento di mezza o completa pensione, sono serviti, rispettivamente, dalle 11.30 alle 14.00 e dalle 18.30 alle 19.30. Tuttavia, nelle serate di musica dal vivo la cena è servita dalle ore 18.30 alle ore 19.00.
 
 
 #CONTACTS ----------------
@@ -57,10 +60,10 @@ contacts.phone=Telefono
 
 #OPERATION SUCCESSFUL
 operation.successful-title=Operazione completata con successo
-operation.successful=Abbiamo ricevuto la sua prenotazione e le abbiamo inviato una mail in cui è presente il riepilogo di quest''ultima. Sarà contattato dal nostro staff il prima possibile. Nel frattempo ci auguriamo che lei abbia un giorno magnifico.
+operation.successful=Abbiamo ricevuto la sua prenotazione e le abbiamo inviato una mail in cui è contenuto il riepilogo di quest''ultima. Sarà contattato dal nostro staff il prima possibile. In caso di errori la preghiamo di contattarci. Nel frattempo Le auguriamo una magnifica giornata.
 
 
-operation.footer=Hotel ancora staff
+operation.footer=Hotel Ancora Staff
 
 #MAIL & PRENOTATION FORM
 form.first-name=Nome
@@ -68,7 +71,7 @@ form.last-name=Cognome
 form.phone=Numero di telefono
 form.email=Indirizzo email
 form.arrival-date=Data di arrivo
-form.departure-date=Data di partenze
+form.departure-date=Data di partenza
 form.room-type=Tipo di camera
 form.treatment-type=Tipo di pernottamento
 form.adults=Numero di adulti
@@ -93,14 +96,14 @@ mail.greetings=Grazie ancora per averci scelto. Cordiali saluti
 mail.summary-of-prenotation=Di seguito può trovare il riassunto della sua prenotazione.
 
 #ERRORS
-error.required=Questo campo deve essere completato
-error.email=La preghiamo di inserire un indirizzo email corretto
-error.min=Prego inserisca un numero maggiore o uguale di {0}
-error.number=Per favore inserisca un numero
-error.page-not-found-title=La pagina non è stata trovata
-error.page-not-found=Siamo spaicenti, ma l''indirizzo <strong>"{0}"</strong>strong> non è raggiungibile. Per navigare sul sito prego usare i menù.
+error.required=Questo campo deve essere completato.
+error.email=La preghiamo di inserire un indirizzo email corretto.
+error.min=Prego inserisca un numero maggiore o uguale di {0}.
+error.number=Per favore inserisca un numero (Esempio 1,2 o 5).
+error.page-not-found-title=La pagina non è stata trovata.
+error.page-not-found=Siamo spaicenti, ma l''indirizzo <strong>"{0}"</strong> non è raggiungibile. Per navigare sul sito prego usare i menù.
 error.error-page-title=Si è verificato un errore
-error.error-page=Siamo spiacenti per questo inconveniente, la preghiamo di riprovare più tardi.
+error.error-page=Siamo spiacenti per questo inconveniente, la preghiamo di riprovare a breve.
 
 
 #PRICES -----------------
@@ -108,10 +111,10 @@ prices=Prezzi
 price.convert=Converti
 
 price.today=I nostri prezzi in questo periodo
-price.intro-brief=Tutti i prezzi sono indicati per un soggiorno con camera e colazione. Per la lista completa fare click sul link sottostante.
+price.intro-brief=Tutti i prezzi sono indicati per un soggiorno con camera e colazione. Per visualizzare la lista completa fare click sul link sottostante.
 
 
-price.disclaimer=I prezzi possono essere convertiti in una delle seguenti valute. Comunque, i prezzi mostrati possono non corrispondere ai prezzi applicati dalla vostra banca in caso di pagamento elettronico. Inoltre tutti i pagamenti  cash devono essere effettuati in euro. Se accetti queste condizioni spunta il seguente box.
+price.disclaimer=I prezzi possono essere convertiti in una delle seguenti valute. I prezzi mostrati possono non corrispondere ai prezzi applicati dalla vostra banca in caso di pagamento elettronico. Inoltre, tutti i pagamenti in contante devono essere effettuati in Euro. Se ha capito e accetta queste condizioni la preghiamo di spuntare il seguente box.
 
 prices.special-info=Altre voci
 prices.discount-infants=Sconto bambini da 0 a 2 anni
@@ -124,26 +127,26 @@ prices.supplement=Supplemento per camera doppia ad uso singolo
 periods=Periodi
 
 price.modal-title=Accesso a il 10% di sconto
-price.modal-body=Permanenze di 4 o + notti hanno accesso a uno sconto del 10% che però rende la prenotazione non rimborsabile. L''offerta non include le bevande consumate durante la permanenza.
-price.modal-discard=Non sono interessato
-price.modal-accept=Si grazie applica lo sconto.
+price.modal-body=Permanenze di 4 o più notti hanno accesso a uno sconto opzionale del 10% che,però, rende la prenotazione non rimborsabile. L''offerta non include le bevande consumate durante la permanenza.
+price.modal-discard=Non sono interessato,
+price.modal-accept=Si grazie, desidero usufruire dello sconto.
 
 #FACILITIES ----------------
 facilities=Le nostre strutture
 
 bar= Il nostro Bar
-bar.desc=Il nostro bar è situato direttamente in fronte al lago. Alcuni tavoli arrivano ad essere a circa 3 metri da esso. Ciò crea la giusta atmosfera per godersi il proprio drink immerso nella bellezza paesaggistica. Inoltre il nostro cordiale staff saprà consigliarvi al meglio su quali sono i nostri vini migliori, birre e cocktails. Nel periodo estivo il cantante Americano Rod Olson inoltre allieterà alcune delle vostre serate con pezzi che hanno fatto la storia della musica.
+bar.desc=La terrazza del nostro bar è direttamente affacciata sul lago. Alcuni tavoli sono posti a circa 3 metri da esso, creando la giusta atmosfera per godersi il proprio drink immerso nella bellezza paesaggistica che il Lago offre. Inoltre, il nostro cordiale staff saprà consigliarvi al meglio su quali sono i nostri vini migliori, birre e cocktails. Infine, nel periodo estivo il cantante Americano Rod Olson allieterà le vostre serate con interpretazioni di brani che hanno fatto la storia della musica.
 
 restaurant=Il nostro ristorante
-restaurant.desc=Come per il nostro bar, il nostro ristorante è direttamente affacciato sul lago e propone piatti esclusivamente freschi. Il nostro menu spazia da una ampia scelta di pizze al pesce di lago e non strascura i nostri clienti più giovani includendo piatti tipicamente adatti ai loro gusti. I clienti dell''hotel che non pagano per mezza pensione o pensione completa, ma che comunque decidono di mangiare al nostro ristorante hanno accesso al 10% di sconto.
+restaurant.desc=Anche il nostro ristorante, come il bar, è affacciato sul Lago. Il nostro menù include solamente piatti freschi che spaziano da un''ampia scelta di pizze fino ai più prelibati pesci lacustri. Sono presenti anche piatti adatti ai  clienti più giovani. I clienti dell''hotel che non usufruiscono di pernottamenti di mezza pensione o pensione completa hanno accesso al 10% di sconto qualora decidano di pranzare o cenare nel nostro ristorante.
 
 
 gardacqua.association=Gardacqua SPA
-gardacqua.short=Il nostro Hotel è partner della lussuosa SPA Gardacqua da ben 2 anni. Quest''ultima, situata nell''entroterra Gardesano, mette a disposizione dei suoi clienti 4 piscine, 6 tipi di saune, un centro massaggi, solarium e una palestra. I clienti dell''hotel che soggiornano per più di una notte hanno accesso gratuito a un biglietto per persona al giorno, mentre coloro che non soddisfano questa condizione possono comprare un biglietto a prezzi molto vantaggiosi.
+gardacqua.short=A partire da Marzo 2015 il nostro Hotel diventerà partner della lussuosa SPA Gardacqua. Quest''ultima, situata nell''entroterra Gardesano, mette a disposizione 4 piscine, 6 tipi di saune, un centro massaggi, solarium e una palestra. I clienti dell''hotel che soggiornano per più di una notte hanno accesso gratuito a un biglietto per persona al giorno, mentre coloro che non soddisfano questa condizione possono comprare un biglietto a prezzi molto vantaggiosi.
 
 
 parking.label=Parcheggio custodito
-parking.description=Lo staff del nostro hotel è consapevole dell''inportanza della sicurezza delle macchine dei nostri clienti. Per questa ragione abbiamo deciso di affittare un parcheggio custodito 24 ore su 24 in modo da garantire la massima sicurezza. Esso è collocato a circa 500m dall''hotel, ma per il carico e lo scarico dei bagagli è disponibile un parcheggio temporaneo distante appena 30m dall''hotel. In questo modo i bagagli pesanti non saranno più un problema.
+parking.description=Lo staff del nostro hotel è consapevole dell''importanza della sicurezza delle macchine dei nostri clienti. Per questa ragione abbiamo deciso di affittare un parcheggio custodito (24 ore su 24) in modo da garantire un soggiorno spensiarato. Esso è collocato a circa 500m dall''hotel. Tuttavia, per il carico e lo scarico dei bagagli è disponibile un parcheggio temporaneo distante appena 30m dall''hotel. In questo modo i bagagli pesanti non saranno più un problema.
 
 
 #BOOKING PANEL ----------
@@ -164,18 +167,18 @@ room.our-rooms=Le nostre camere
 room.description=Descrizione
 
 room.lake-view=Camera vista lago
-room.lake-view-desc=Le nostre camere vista danno l''opportunità ai loro ospiti di godere in ogni momento della bellezza del lago. Ogni camera di questo dipo ha accesso a un balcone condiviso da cui è possibile assistere a spettacolari tramonti. Le camere sono rivolte a ovest e quindi il sole mattuttino non rovinerà il vostro relax.
+room.lake-view-desc=Le nostre camere affacciate sul Lago offrono la possibilità di godere in ogni momento della sua bellezza. Ogni camera di questo dipo ha accesso a un balcone da cui è possibile assistere a spettacolari tramonti. Le camere sono rivolte a ovest e quindi il sole mattuttino non rovinerà il vostro relax. Ogni camera è fornita di tutte le amenità: televisione, telefono, bagno privato, connession WiFi, aria condizionata ecc..
 
 
 room.mountain-view=Camera vista monte
-room.mountain-view-desc=Le nostre camere vista monte offrono una spettacolare vista sulla Rocca, l''altopiano che torreggia Garda. Ogni camera è fornita di tutte le amenità: televisione, telefono, bagno privato, connession WiFi, aria condizionata ecc. ecc..
+room.mountain-view-desc=Le nostre camere vista monte offrono una spettacolare vista sulla Rocca, l''altopiano che torreggia l'insenatura di Garda. Ogni camera è fornita di tutte le amenità: televisione, telefono, bagno privato, connession WiFi, aria condizionata ecc..
 
 room.suite=Suite
-room.suite-desc=La nostra suite è collocata al terzo piano del nostro Hotel e dà ai suoi ospiti una visione mozzafiato del lago e di tutto l''entroterra gardesano. Da come è possibile vedere dalle foto, la camera da accesso a una terrazza privata di circa 10 metri quadrati nella quale in totale privacy e possibile prendere il sole, cenare o guardare i frequenti spettacoli musicali che colorano le notti estive di Garda. La camera è fornita di 3 letti e permette varie configurazioni di essi.
+room.suite-desc=La nostra suite è collocata al terzo piano del nostro Hotel e permette di ammirare il lago e tutto l''entroterra Gardesano. Da come è possibile vedere dalle foto, la camera da accesso a una terrazza privata di circa 10 metri quadrati nella quale, in totale privacy, e possibile prendere il sole, cenare o guardare i frequenti spettacoli musicali che colorano le notti estive di Garda. La camera è fornita di 3 letti che permettono diverse configurazioni.
 
 
 room.single=Camera singola
-room.single-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+room.single-desc=Le nostre camere singole offrono tutte le comodità disponibili alle altre camere. Queste sono la scelta perfetta per viaggiatori solitari o qualora vi sia la necessità di avere una camera addizionale.
 
 room.type=Tipo della camera
 
@@ -188,34 +191,34 @@ surroundings.for-families=Divertimento per tutta la famiglia
 surroundings.relax=Se quello che cercate è relax...
 
 surroundings.verona=Verona
-surroundings.verona-desc=Garda dista circa 30Km da Verona, il nostro capoluogo di provincia e una delle città più storiche d''Italia. Infatti, a dispetto delle sue modeste dimensioni attuali è stata un''importante crocevia in tempo Romano e, in tempo delle Signorie, capitale dei territori conquistati dalla famiglia dei Della Scala. A Verona è quindi possibile ammirare questo magnifico mix di stili. Fra i punti più interessanti da visitare vi è sicuramente la casa di Giulietta e Romeo, l''Arena e Via Mazzini nella quale è possibile fare shopping.
+surroundings.verona-desc=Garda dista circa 30 Km da Verona. Il nostro capoluogo di provincia e una delle città più storiche d''Italia. Infatti, a dispetto delle sue modeste dimensioni, è stata un''importante crocevia in tempo Romano e, in tempo delle Signorie, capitale dei territori conquistati dalla famiglia dei Della Scala. A Verona è quindi possibile ammirare questa magnifica amalgame di stili. Fra i punti più interessanti da visitare vi è sicuramente la casa di Giulietta e Romeo, l''Arena e Via Mazzini nella quale è possibile fare shopping.
 
 
-surroundings.opera=Opera
-surroundings.opera-desc=Verone è anche la capitale mondiale dell''Opera Lirica. Infatti l''Arena è forse il più prestiogioso teatro esistente e sicuramento uno dei più suggestivi. Nella stagione estiva è possibile vedere tutte le più grandi opere mai scritte, dell''Aida al Rigoletto, al Barbiere di Siviglia ecc. ecc.. Per maggiori informazioni riguardo ai prezzi e date vi suggieriamo di cliccare al link sottostante che vi indirizzerà al sito ufficiale. Il rientro in Hotel, che usualmente avviene in ora tarda dopo un''opera è consentito dalla nostra entrata notturna.
+surroundings.opera=Lirica
+surroundings.opera-desc=Verone è anche la capitale mondiale dell''Opera Lirica. Infatti, l''Arena è forse il più prestiogioso teatro esistente e, sicuramente, uno dei più suggestivi. Nella stagione estiva è possibile vedere tutte le più grandi Opere mai scritte, dell''Aida al Rigoletto passando per il Barbiere di Siviglia. Per maggiori informazioni riguardo a prezzi e date vi suggieriamo di cliccare al link sottostante che vi indirizzerà al sito ufficiale. Il rientro in Hotel, che usualmente avviene in ora tarda, è consentito dalla nostra entrata notturna.
 
 
 
 surroundings.lake=Lago di Garda
-surroundings.lake-desc=Senza spostarsi di molto da Garda è possibile trovare un gran numero di punti di interesse storici e artistici. Infatti, la nostra area è stata abitata fin dal Paleolitico Medio. Inoltre il lago di Garda è stata la meta di villeggiatura preferita di Catullo, di Goethe e residenza di Gabriele d''Annunzio. Per scoprire di più sulla nostra terra vi suggeriamo di cliccare sul link sottostante.
+surroundings.lake-desc=Senza allontanarsi di molto da Garda è possibile trovare un gran numero di punti di interesse storici e artistici. Infatti, il Garda è stato abitato fin dal Paleolitico Medio. Inoltre, la zone è stata la meta di villeggiatura preferita di Catullo, di Goethe e infine di Gabriele d''Annunzio.
 
 
 surroundings.caneva=Caneva
-surroundings.caneva-desc=La sponda Veronese del lago di Garda ospita uno dei più grandi acqua-park d''Italia. Il parco, situato a circa 20 minuti in auto dal nostro Hotel è un posto unico per tutta la famiglia e ospita un numero molto grande di attrazioni acquatiche, che soddisferanno i più giovani e anche i più temerari. Per conoscere prezzi, orari e offerte cliccate sul link sottostante.
+surroundings.caneva-desc=La sponda Veronese del lago di Garda ospita uno dei più grandi acqua-park d''Italia e d''Europa. Il parco, situato a circa 20 minuti in auto dal nostro Hotel, è un posto unico per tutta la famiglia e ospita moltissime attrazioni acquatiche, che soddisferanno i più giovani e i più temerari. Per conoscere prezzi, orari e offerte cliccate sul link sottostante.
 
 surroundings.gardaland=Gardaland
-surroundings.gardaland-desc=Il lago ospita anche un parco dei divertimenti tradizionale. Gardaland è situato nelle vicinanze di Caneva e quindi in circa 15/20 minuti è di macchina è possibile arrivarci. Il parco, di dimensioni gargantuesche, da accesso a un grande numero di attrazioni e offre punti di ristoro, negozi etc. etc..
+surroundings.gardaland-desc=Il lago ospita anche un parco dei divertimenti tradizionale, Gardaland. Questo è situato nelle vicinanze di Caneva e quindi in circa 15/20 minuti è di macchina è possibile arrivarci. Il parco, di dimensioni gargantuesche, da accesso a molte attrazioni, un piccolo acquario con delfini, un palaghiaccio e, infine, punti di ristoro e negozi.
 
 
 surroundings.zoo=Parco Natura Viva
-surroundings.zoo-desc=Un''altra opzione per la famiglia è il Parco Natura Viva. In esso, è possibile avere accesso ad un normale zoo o eseguire un mini-safari con la propria auto. L''esperienza di essere così vicino a leoni e tigri è inappagabile.
+surroundings.zoo-desc=Un''altra opzione per la famiglia è il Parco Natura Viva. In esso, è possibile avere accesso ad un normale zoo o avventurarsi all'interno di un mini-safari con la propria auto. L''esperienza di essere così vicino a leoni e tigri è inappagabile.
 
 
 surroundings.enogastronomia=Enogastronomia
-surroundings.enogastronomia-desc=Il nostro lago offre molto in termini di cibo e vini. L''area adiacente a esso infatti ha una lunga tradizione nella cucina di pesci lacustri come il luccio. Come già accennato in recedenza, le colline moreniche offrono una grande varietà di pregiati vini che possono accompagnare in maniera eccellente ogni vostro pasto. Alcuni viaggi organizzati sono disponibili per visitare le migliori cantine e assaggiare o comprare vini a prezzi vantaggiosi e avere qualche assaggio di cucina tradizionale
+surroundings.enogastronomia-desc=Il nostro lago offre molto in termini di cibo e vini. L''area adiacente a esso, infatti, ha una lunga tradizione nella cucina di pesci lacustri come il Luccio. Come già accennato in precedenza, le colline moreniche a sud di Garda offrono una grande varietà di vini pregiati che possono accompagnare in maniera eccellente ogni vostro pasto. Sono disponibili viaggi organizzati per visitare le migliori cantine e assaggiare o comprare vini a prezzi vantaggiosi e avere qualche assaggio di cucina tradizionale.
 
 surroundings.sigurta=Parco Sigurtà
-surroundings.sigurta-desc=Il parco Sigurtà è uno dei più famosi giardini botanici in tutta Europa. Il clima particolare generato dalle acque del lago permette di avere una flora contenente sia la tipica macchia mediterranea che la vegetazione sub-alpina.
+surroundings.sigurta-desc=Il parco Sigurtà è uno dei più famosi giardini botanici in tutta Europa. Il micro-clima particolare generato dalle acque del Lago permette di avere una flora contenente sia la tipica macchia mediterranea che la vegetazione sub-alpina. Il parco, situato a Valeggio Sul Mincio all'interno dei giardini di un antico Castello, permette di osservare tali bellezze immersi nel verde.
 
 
 #TREATMENT -------------
