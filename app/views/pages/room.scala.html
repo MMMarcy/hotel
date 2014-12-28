@@ -15,9 +15,9 @@
 		<h2>
 			@{
 				room match {
-					case RoomType.suite => Messages("room.suite")
-					case RoomType.mountainView => Messages("room.mountain-view")
-					case RoomType.lakeView => Messages("room.lake-view")
+					case RoomType.triple => Messages("room.suite")
+					case RoomType.double => Messages("room.mountain-view")
+					case RoomType.quad => Messages("room.lake-view")
 					case RoomType.single => Messages("room.suite")
 				}
 			}
@@ -26,17 +26,17 @@
 	<div class="col-md-6">
 		@{
 				room match {
-					case RoomType.suite => common.carousel(
+					case RoomType.triple => common.carousel(
 							(routes.Assets.versioned("images/suite1.jpg").url, Messages("images.suite1")),
 							(routes.Assets.versioned("images/suite2.jpg").url, Messages("images.suite2")),
 							(routes.Assets.versioned("images/suite3.jpg").url, Messages("images.suite3"))
 						)
-					case RoomType.mountainView => common.carousel(
+					case RoomType.double => common.carousel(
 							(routes.Assets.versioned("images/mountainView1.jpg").url, Messages("images.mountainView1")),
 							(routes.Assets.versioned("images/mountainView2.jpg").url, Messages("images.mountainView2")),
 							(routes.Assets.versioned("images/mountainView3.jpg").url, Messages("images.mountainView3"))
 						)
-					case RoomType.lakeView => common.carousel(
+					case RoomType.quad => common.carousel(
 							(routes.Assets.versioned("images/lakeView1.jpg").url, Messages("images.lakeView1")),
 							(routes.Assets.versioned("images/lakeView2.jpg").url, Messages("images.lakeView2")),
 							(routes.Assets.versioned("images/lakeView3.jpg").url, Messages("images.lakeView3"))
@@ -55,9 +55,9 @@
 		<div>
 		@{
 				room match {
-					case RoomType.suite => Messages("room.suite-desc")
-					case RoomType.mountainView => Messages("room.mountain-view-desc")
-					case RoomType.lakeView => Messages("room.lake-view-desc")
+					case RoomType.triple => Messages("room.suite-desc")
+					case RoomType.quad => Messages("room.mountain-view-desc")
+					case RoomType.double => Messages("room.lake-view-desc")
 					case RoomType.single => Messages("room.suite-desc")
 				}
 			}

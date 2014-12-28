@@ -78,29 +78,9 @@
                 <span></span>
             </div>
             <div class="col-xs-12">
-                <table style="width: 100%;">@Html(PriceObject.printTable(RoomType.single))</table>
+                @Html(PriceObject.printTable(RoomType.double)( RoomView.lakeView, RoomView.mountainView))
             </div>
-            <div class="col-xs-12 box">
-                <h3>@Messages("room.mountain-view")</h3>
-                <span></span>
-            </div>
-            <div class="col-xs-12">
-                <table style="width: 100%;">@Html(PriceObject.printTable(RoomType.mountainView))</table>
-            </div>
-            <div class="col-xs-12 box">
-                <h3>@Messages("room.lake-view")</h3>
-                <span></span>
-            </div>
-            <div class="col-xs-12">
-                <table style="width: 100%;">@Html(PriceObject.printTable(RoomType.lakeView))</table>
-            </div>
-            <div class="col-xs-12 box">
-                <h3>@Messages("room.suite")</h3>
-                <span></span>
-            </div>
-            <div class="col-xs-12">
-                <table style="width: 100%;">@Html(PriceObject.printTable(RoomType.suite))</table>
-            </div>
+
         </div>
 
         <div class="row">

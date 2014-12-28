@@ -35,10 +35,10 @@
             @inputText(prenotationForm(Booking.toSTR), '_label -> Messages("form.departure-date"), 'class -> "form-control", '_id -> "to")
 
             @select(prenotationForm(Booking.roomSTR),
-                Seq(RoomType.lakeView.toString -> Messages("room.lake-view"),
-                    RoomType.mountainView.toString -> Messages("room.mountain-view"),
-                    RoomType.suite.toString -> Messages("room.suite"),
-                    RoomType.single.toString -> Messages("room.single")),
+                Seq(RoomType.single.toString -> Messages("room.lake-view"),
+                    RoomType.double.toString -> Messages("room.mountain-view"),
+                    RoomType.triple.toString -> Messages("room.suite"),
+                    RoomType.quad.toString -> Messages("room.single")),
                 '_label -> Messages("form.room-type"), 'class -> "form-control")
 
             @select(prenotationForm(Booking.treatmentSTR),

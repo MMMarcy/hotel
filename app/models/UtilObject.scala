@@ -42,9 +42,9 @@ object UtilObject {
 
   def stringToRoomType(roomType: String): RoomType = {
   	roomType match {
-  		case "lakeview" => RoomType.lakeView
-  		case "mountainview" => RoomType.mountainView
-  		case "suite" => RoomType.suite
+  		case "lakeview" => RoomType.single
+  		case "mountainview" => RoomType.double
+  		case "suite" => RoomType.triple
   		case "single" => RoomType.single
   		case _ => throw new Exception()
   	}

@@ -45,25 +45,25 @@
 				<li class="col-xs-12">
 					@Messages("room.lake-view")
 					<small class="pull-right">
-						@UtilObject.format(PriceObject.map(RoomType.lakeView) (Treatment.bb) (today))
+						@UtilObject.format(PriceObject.map(RoomType.double)(RoomView.mountainView) (Treatment.bb) (today))
 					</small>
 				</li>
 				<li class="col-xs-12">
 					@Messages("room.mountain-view")
 					<small class="pull-right">
-						@UtilObject.format(PriceObject.map(RoomType.mountainView) (Treatment.bb)(today))
+						@UtilObject.format(PriceObject.map(RoomType.triple)(RoomView.mountainView) (Treatment.bb)(today))
 					</small>
 				</li>
 				<li class="col-xs-12">
 					@Messages("room.suite")
 					<small class="pull-right">
-						@UtilObject.format(PriceObject.map(RoomType.suite) (Treatment.bb)(today))
+						@UtilObject.format(PriceObject.map(RoomType.quad)(RoomView.mountainView) (Treatment.bb)(today))
 					</small>
 				</li>
 				<li class="col-xs-12">
 					@Messages("room.single")
 					<small class="pull-right">
-						@UtilObject.format(PriceObject.map(RoomType.single) (Treatment.bb)(today))
+						@UtilObject.format(PriceObject.map(RoomType.single)(RoomView.mountainView) (Treatment.bb)(today))
 					</small>
 				</li>
 			</ul>
