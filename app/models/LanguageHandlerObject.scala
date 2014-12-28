@@ -11,7 +11,7 @@ object LanguageHandlerObject {
     "it" -> "Italiano",
     "en" -> "English",
     "de" -> "Deutsch",
-    "fr" -> "Francoise",
+    "fr" -> "Français",
     "es" -> "Español",
     "sv" -> "Svenska"
   )
