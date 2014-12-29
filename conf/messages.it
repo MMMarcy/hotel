@@ -50,6 +50,7 @@ accomodation.check-out=Il check-out è effettuato tassativamente prima delle 10.
 
 accomodation.timetables-title=Orari
 accomodation.timetables=L''Hotel apre dalle 07.00 fino alle 00.00 in estate e fino alle 18.00 in inverno. La colazione è servita dalle 7.30 alle 10.30. Pranzo e cena, qualora usufruiate del trattamento di mezza o completa pensione, sono serviti, rispettivamente, dalle 11.30 alle 14.00 e dalle 18.30 alle 19.30. Tuttavia, nelle serate di musica dal vivo la cena è servita dalle ore 18.30 alle ore 19.00.
+accomodation.legend=Legenda
 
 
 #CONTACTS ----------------
@@ -151,7 +152,7 @@ parking.description=Lo staff del nostro hotel è consapevole dell''importanza de
 
 #BOOKING PANEL ----------
 price.from=A partire da
-price.per-night-per-person=Per notte per persona
+price.per-night-per-person=per notte con colazione
 
 #ROOMS FACILITIES ------
 room.facilities=Servizi della camere
@@ -166,19 +167,21 @@ room.telephone=Telefono
 room.our-rooms=Le nostre camere
 room.description=Descrizione
 
-room.lake-view=Camera vista lago
-room.lake-view-desc=Le nostre camere affacciate sul Lago offrono la possibilità di godere in ogni momento della sua bellezza. Ogni camera di questo dipo ha accesso a un balcone da cui è possibile assistere a spettacolari tramonti. Le camere sono rivolte a ovest e quindi il sole mattuttino non rovinerà il vostro relax. Ogni camera è fornita di tutte le amenità: televisione, telefono, bagno privato, connession WiFi, aria condizionata ecc..
-
-
-room.mountain-view=Camera vista monte
-room.mountain-view-desc=Le nostre camere vista monte offrono una spettacolare vista sulla Rocca, l''altopiano che torreggia l'insenatura di Garda. Ogni camera è fornita di tutte le amenità: televisione, telefono, bagno privato, connession WiFi, aria condizionata ecc..
-
-room.suite=Suite
-room.suite-desc=La nostra suite è collocata al terzo piano del nostro Hotel e permette di ammirare il lago e tutto l''entroterra Gardesano. Da come è possibile vedere dalle foto, la camera da accesso a una terrazza privata di circa 10 metri quadrati nella quale, in totale privacy, e possibile prendere il sole, cenare o guardare i frequenti spettacoli musicali che colorano le notti estive di Garda. La camera è fornita di 3 letti che permettono diverse configurazioni.
-
-
 room.single=Camera singola
-room.single-desc=Le nostre camere singole offrono tutte le comodità disponibili alle altre camere. Queste sono la scelta perfetta per viaggiatori solitari o qualora vi sia la necessità di avere una camera addizionale.
+room.single-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+room.double=Camera doppia
+room.double-desc=le nostre spaziose camere doppie sono la scelta perfetta per rilassarsi col proprio partner. Offrono tutti gli accessori disponibili alle altre camere. Inoltre, le camere affacciate sul lago dispongono di un balcone da cui è possibile ammirare il lago mentre si è immersi nell'atmosfera tipica di Garda. Infine, vogliamo ricordare che su richiesta è possibile separare i letti.
+
+room.triple=Camera tripla
+room.triple-desc=La nostra camera tripla è situata all'ultimo piano del nostro Hotel. Gli ospiti hanno accesso ad una terrazza privata di circa 10 metri quadrati da cui si ha una vista a quasi 360 gradi del lago e dell'entroterra Gardesano. La camera mette a disposizione tre letti con disposizione 2 + 1, ma su richiesta è possibile avere tre letti singoli divisi.
+
+room.quad=Camera quadrupla
+room.quad-desc=la nostra camera quadrupla mette a disposizione 2 camere doppie. Questa configurazione è perfetta per famiglie in quanto i genitori possono rilassarsi mentre i più piccoli fanno altro. Una delle due camere ha accesso ad un balcone da cui è possibile ammirare il lago o semplicemente godersi l'atmosfera.
+
+
+room.mountainView=Vista monte
+room.lakeView=Vista lago
 
 room.type=Tipo della camera
 

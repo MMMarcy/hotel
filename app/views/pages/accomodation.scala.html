@@ -23,12 +23,12 @@
 <div class="row box-container">
     <div class="col-sm-4 box padded">
         <img src="/assets/images/suite1.jpg" alt="">
-        <h3>@Messages("room.lake-view")</h3>
+        <h3>@Messages("room.double")</h3>
         <span></span>
         <div>
-            @Html(Messages("room.lake-view-desc"))
+            @Html(Messages("room.double-desc"))
             <div class="margined">
-                <a href="@routes.Application.showRoom("lakeview")" class="btn btn-default">@Messages("util.discover-more")</a>
+                <a href="@routes.Application.showRoom("double")" class="btn btn-default">@Messages("util.discover-more")</a>
             </div>
         </div>
 
@@ -36,25 +36,25 @@
 
     <div class="col-sm-4 box padded">
         <img src="/assets/images/suite2.jpg" alt="">
-        <h3>@Messages("room.mountain-view")</h3>
+        <h3>@Messages("room.triple")</h3>
         <span></span>
 
         <div>
-            @Messages("room.mountain-view-desc")
+            @Messages("room.triple-desc")
             <div class="margined">
-                <a href="@routes.Application.showRoom("mountainview")" class="btn btn-default">@Messages("util.discover-more")</a>
+                <a href="@routes.Application.showRoom("triple")" class="btn btn-default">@Messages("util.discover-more")</a>
             </div>
         </div>
     </div>
 
     <div class="col-sm-4 box padded">
         <img src="/assets/images/suite3.jpg" alt="">
-        <h3>@Messages("room.suite")</h3>
+        <h3>@Messages("room.quad")</h3>
         <span></span>
         <div>
-            @Messages("room.suite-desc")
+            @Messages("room.quad-desc")
             <div class="margined">
-                <a href="@routes.Application.showRoom("suite")" class="btn btn-default">@Messages("util.discover-more")</a>
+                <a href="@routes.Application.showRoom("quad")" class="btn btn-default">@Messages("util.discover-more")</a>
             </div>
         </div>
     </div>
@@ -63,79 +63,118 @@
     <div class="col-xs-12 margined" id="prices">
         <h2>@Messages("prices")</h2>
         <hr></div>
-    <div class="col-xs-12">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="col-xs-4 title-periods">@Messages("periods")</div>
-            </div>
-            <div class="col-xs-12">
-                <table style="width: 100%;">
-                    <tbody>@Html(PriceObject.printPeriods)</tbody>
-                </table>
-            </div>
-            <div class="col-xs-12 box">
-                <h3>@Messages("room.single")</h3>
-                <span></span>
-            </div>
-            <div class="col-xs-12">
-                @Html(PriceObject.printTable(RoomType.double)( RoomView.lakeView, RoomView.mountainView))
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 box">
-                <h3>@Messages("prices.special-info")</h3>
-                <span></span>
-            </div>
-            <div class="col-xs-12">
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <td>@Messages("prices.discount-infants")</td>
-                            <td>- 100%</td>
-                        </tr>
-                        <tr>
-                            <td>@Messages("prices.discount-small-kids")</td>
-                            <td>- 50%</td>
-                        </tr>
-                        <tr>
-                            <td>@Messages("prices.discount-big-kids")</td>
-                            <td>- 20%</td>
-                        </tr>
-                        <tr>
-                            <td>@Messages("prices.supplement")</td>
-                            <td>+ 100%</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-        </div>
-    </div>
-    <div class="row box">
-        <div class="col-xs-12 padded">
-            <div class="col-md-12 text-justify">
-                @Messages("price.disclaimer")
-                &#8594;
-                <input type="checkbox" id="disclaimer-acceptance"></div>
+    <div class="col-sm-9">
+        <div class="col-xs-12">
             <div class="row">
-                <div class="col-xs-4 padded">
-                    <select class="form-control" disabled="disabled" id="sel-currency">
-                        <option>Chf</option>
-                        <option>Dkk</option>
-                        <option>Gbp</option>
-                        <option>Nok</option>
-                        <option>Sek</option>
-                        <option>Usd</option>
-                    </select>
-                </div>
-                <div class="col-xs-2 text-center padded">
-                    <button class="btn btn-default" id="btn-currency" disabled="disabled">@Messages("price.convert")</button>
+                <div class="col-xs-4 title-periods">@Messages("periods")</div>
+
+                <div class="col-xs-12">
+                    <table style="width: 100%;">
+                        <tbody>@Html(PriceObject.printPeriods)</tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
+    <div class="col-sm-3">
+        <div class="col-xs-4 title-periods">@Messages("accomodation.legend")</div>
+        <div class="col-xs-12">
+            <div>
+                <div class="leg fb"></div>
+                <span>@Messages("treatment.fb")</span>
+            </div>
+            <div>
+                <div class="leg hb"></div>
+                <span>@Messages("treatment.hb")</span>
+            </div>
+            <div>
+                <div class="leg bb"></div>
+                <span>@Messages("treatment.bb")</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 box">
+        <h3>@Messages("room.single")</h3>
+        <span></span>
+    </div>
+    <div class="col-xs-12">
+        @Html(PriceObject.printTable(RoomType.single)( RoomView.mountainView))
+    </div>
+
+    <div class="col-xs-12 box">
+        <h3>@Messages("room.double")</h3>
+        <span></span>
+    </div>
+    <div class="col-xs-12">
+        @Html(PriceObject.printTable(RoomType.double)( RoomView.lakeView, RoomView.mountainView))
+    </div>
+    <div class="col-xs-12 box">
+        <h3>@Messages("room.triple")</h3>
+        <span></span>
+    </div>
+    <div class="col-xs-12">
+        @Html(PriceObject.printTable(RoomType.double)( RoomView.lakeView))
+    </div>
+    <div class="col-xs-12 box">
+        <h3>@Messages("room.quad")</h3>
+        <span></span>
+    </div>
+    <div class="col-xs-12">
+        @Html(PriceObject.printTable(RoomType.double)( RoomView.lakeView))
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 box">
+        <h3>@Messages("prices.special-info")</h3>
+        <span></span>
+    </div>
+    <div class="col-xs-12">
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td>@Messages("prices.discount-infants")</td>
+                    <td>- 100%</td>
+                </tr>
+                <tr>
+                    <td>@Messages("prices.discount-small-kids")</td>
+                    <td>- 50%</td>
+                </tr>
+                <tr>
+                    <td>@Messages("prices.discount-big-kids")</td>
+                    <td>- 20%</td>
+                </tr>
+                <tr>
+                    <td>@Messages("prices.supplement")</td>
+                    <td>+ 100%</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<div class="row box">
+        <div class="col-md-8 text-justify margined">
+            @Messages("price.disclaimer")
+                &#8594;
+            <input type="checkbox" id="disclaimer-acceptance"></div>
+        <div class="row">
+            <div class="col-md-2 padded">
+                <select class="form-control" disabled="disabled" id="sel-currency">
+                    <option>Chf</option>
+                    <option>Dkk</option>
+                    <option>Gbp</option>
+                    <option>Nok</option>
+                    <option>Sek</option>
+                    <option>Usd</option>
+                </select>
+            </div>
+            <div class="col-md-2 text-center padded">
+                <button class="btn btn-default" id="btn-currency" disabled="disabled">@Messages("price.convert")</button>
+            </div>
+        </div>
 </div>
 <script type="text/javascript" src="@routes.Assets.versioned("javascripts/currency.js")"></script>
 <div class="row">
@@ -160,7 +199,9 @@
     <div class="col-xs-6 box margined" id="special-offer">
         <h3>@Messages("accomodation.special-offer-title")</h3>
         <span></span>
-        <div>@Messages("accomodation.special-offer", UtilObject.discountMinDays, UtilObject.discountPercentage)</div>
+        <div>
+            @Messages("accomodation.special-offer", UtilObject.discountMinDays, UtilObject.discountPercentage)
+        </div>
     </div>
     <div class="col-xs-6 box margined">
         <h3>@Messages("accomodation.timetables-title")</h3>

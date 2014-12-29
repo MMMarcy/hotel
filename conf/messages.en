@@ -14,11 +14,13 @@ home.services=Services
 home.services-sub=What we have to offer
 home.events=Around us
 home.events-sub=Garda & surroundings
-home.contact=Contact
-home.contact-sub=get in touch
+home.contact=Contacts
+home.contact-sub=Get in touch
+
 home.caption1=Caption1
 home.caption2=Caption2
 home.caption3=Caption3
+
 home.check-in-title=Check-in & Check-out
 home.check-in=Check-in is made between 11.00 and 22.00 during summer. Check-out is made at 11.00 maximun in order to allow the room to be cleaned for our next guest.
 home.services-short-title=Our services in brief
@@ -45,6 +47,7 @@ accomodation.check-out-title=Check-out
 accomodation.check-out=Check-out is performed strictly before 10.00. This choice is made for allowing our next guests to find a clean and tidy room. The late check-out fee is 10€ per person. For special cases, e.g. special needs persons, this rule can be bended, but we would like you to communicate these information beforehand through email, phone, or the special needs box offered while booking.
 accomodation.timetables-title=Timetables
 accomodation.timetables=The hotel is open from 07.00 until 00.00 in summer and from 07.00 until 18.00 in winter. Breakfast is served from 07.30 to 10.30. Launch is available from 11.30 to 14.00. Dinner from 18.30 until 19.30; where live music is programmed dinner is served from 18.30 until 19.00.
+accomodation.legend=Legend
 
 #CONTACTS ----------------
 contacts.label=How to reach us
@@ -140,7 +143,7 @@ error.error-page=We are sorry for this :(. Please try again later.
 
 #BOOKING PANEL ----------
 price.from=From
-price.per-night-per-person=Per night per person
+price.per-night-per-person=per night with breakfast included
 
 
 #ROOMS FACILITIES ------
@@ -156,18 +159,21 @@ room.telephone=Telephone
 room.our-rooms=Our Rooms
 room.description=Room Description
 
-room.lake-view=Lake View room
-room.lake-view-desc=Our Lake Views room give you the opportunity to have the beauty of the lake always in front of you. Every Lake View room has access to a shared balcony on which is possible to spend amazing quality time observing the lake and its shores or simply the dynamics of Garda, which are a perfect mix of tradition and modernity. The rooms are exposed to west and therefore the morning Sun will not ruin your sleeping time.
-
-room.mountain-view=Mountain View room
-room.mountain-view-desc=Our Mountain View rooms offer a view on Garda''s downtown and the Rocca, the hill that is on Garda''s south border. Every room has a private bathroom with a shower, television and air conditioning that will help during hot summer days. Beds can be arranged in a single double sized bed or divided in two normal size ones. Room cleaning is performed every morning.
-
-room.suite=Suite
-room.suite-desc=Our suite is located on the top floor of our Hotel in order to allow its guests to have a breathtaking 360 degrees view of the Lake and of Garda. The room, as it is possible to see through the gallery has a private terrace of about 10 square meters in which is possible to tan, dine, etc. etc. in complete privacy. The suite contains three bed arrenged in a  2 plus 1 configuration, but can be easily arrenged on a  1 plus 1 plus 1 configuration on request. 
-
 room.single=Single room
 room.single-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
+room.double=Double Room
+room.double-desc=Our spacious double rooms offer the perfect place for spending quality time with your partner. They offer all the facilities availble to the other rooms while offering a majestic view of Garda or the Lake. The ones facing the lake also include a balcony, from which you can enjoy the amazing atmosphere that only Garda can offer. Finally, beds can be detached on request.
+
+room.triple=Triple Room
+room.triple-desc=Our triple room is located on the top floor of our Hotel. Its guests can enjoy a breathtaking 360 degrees view of the Lake and Garda. The room, as it is possible to see through the gallery, has a private terrace of about 10 square meters in which is possible to tan, dine, etc. in complete privacy. The suite contains three bed arrenged in a  2 plus 1 configuration, but can be easily arrenged on a  1 plus 1 plus 1 configuration on request.
+
+room.quad=Quadruple Room
+room.quad-desc=Our quadruple room consists of two separated double rooms, connected through a small corridor. One of these rooms leads to a balcony, in which all the family can enjoy our lovely weather and the magnific atmosphere that Garda and the lake offer.
+
+
+room.mountainView=Mountain View
+room.lakeView=Lake View
 room.type=Room Type
 
 #SOCIAL

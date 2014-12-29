@@ -15,10 +15,10 @@
 		<h2>
 			@{
 				room match {
-					case RoomType.triple => Messages("room.suite")
-					case RoomType.double => Messages("room.mountain-view")
-					case RoomType.quad => Messages("room.lake-view")
-					case RoomType.single => Messages("room.suite")
+					case RoomType.triple => Messages("room.triple")
+					case RoomType.double => Messages("room.double")
+					case RoomType.quad => 	Messages("room.quad")
+					case RoomType.single => Messages("room.single")
 				}
 			}
 		</h2>
@@ -55,10 +55,10 @@
 		<div>
 		@{
 				room match {
-					case RoomType.triple => Messages("room.suite-desc")
-					case RoomType.quad => Messages("room.mountain-view-desc")
-					case RoomType.double => Messages("room.lake-view-desc")
-					case RoomType.single => Messages("room.suite-desc")
+					case RoomType.triple => Messages("room.triple-desc")
+					case RoomType.quad => Messages("room.quad-desc")
+					case RoomType.double => Messages("room.double-desc")
+					case RoomType.single => Messages("room.single-desc")
 				}
 			}
 			</div>

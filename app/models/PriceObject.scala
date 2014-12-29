@@ -40,7 +40,7 @@ object PriceObject {
 
   def printTable(roomType: RoomType)(views: RoomView*)(implicit lang: Lang): String = {
     val stringBuilder = new StringBuilder()
-    stringBuilder.append("<table>")
+    stringBuilder.append("<table class=\"price-holder\">")
     stringBuilder.append("<thead>")
     stringBuilder.append("<tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr>")
     stringBuilder.append("</thead>")
@@ -48,12 +48,14 @@ object PriceObject {
     for (view <- views) {
       stringBuilder.append("<tr>")
       stringBuilder.append("<td>")
-      stringBuilder.append(view.toString)
+      //TODO: externalize the string
+      stringBuilder.append(Messages("room."+view.toString))
       stringBuilder.append("</td>")
       for (period <- periods) {
         stringBuilder.append("<td>")
         for (treatment <- treatments) {
-          stringBuilder.append("<p class=\"moneyValue\">" + map(roomType)(view)(treatment)(period.intervals.head._1) + "&euro;</p>")
+          stringBuilder.append("<span class=\"moneyValue\">" + map(roomType)(view)(treatment)(period.intervals.head._1) + "&euro;</span>")
+          stringBuilder.append("<br>")
         }
         stringBuilder.append("</td>")
       }

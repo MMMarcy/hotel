@@ -6,100 +6,100 @@
 @import play.api.Logger
 
 @main(Messages("home.title")) {
-<div class="row">
-@common.carousel(
-	(routes.Assets.versioned("images/hotel-slide-1.jpg").url, Messages("home.caption1")),
-	(routes.Assets.versioned("images/hotel-slide-2.jpg").url, Messages("home.caption2")),
-	(routes.Assets.versioned("images/hotel-slide-3.jpg").url, Messages("home.caption3"))
-)
-</div>
+    <div class="row">
+    @common.carousel(
+        (routes.Assets.versioned("images/hotel-slide-1.jpg").url, Messages("home.caption1")),
+        (routes.Assets.versioned("images/hotel-slide-2.jpg").url, Messages("home.caption2")),
+        (routes.Assets.versioned("images/hotel-slide-3.jpg").url, Messages("home.caption3"))
+    )
+    </div>
 
-<h2 class="direct-prenotation">
-<a href="@(routes.Application.accomodation())#special-offer" >@Messages("home.direct-prenotation", UtilObject.discountMinDays, UtilObject.discountPercentage)</a>
-</h2>
+    <h2 class="direct-prenotation">
+        <a href="@(routes.Application.accomodation())#special-offer" >@Messages("home.direct-prenotation", UtilObject.discountMinDays, UtilObject.discountPercentage)</a>
+    </h2>
 
-<hr>
+    <hr>
 
-<div class="row box-container">
-<div class="col-sm-4">
-	@common.box(Html (""))(Messages("home.check-in-title")) {
-	<img src="@routes.Assets.versioned("images/breakfast.jpg")">
-		<div>@Html(Messages("home.check-in"))</div>
-		<div class="row margined">
-			<div class="col-xs-4">
-				<a href="@(routes.Application.accomodation())#check-in-out" class="btn btn-default">@Messages("util.more-info")</a>
-			</div>
-		</div>
-	}
-</div>
+    <div class="row box-container">
+        <div class="col-sm-4">
+        @common.box(Html(""))(Messages("home.check-in-title")) {
+            <img src="@routes.Assets.versioned("images/breakfast.jpg")">
+            <div>@Html(Messages("home.check-in"))</div>
+            <div class="row margined">
+                <div class="col-xs-4">
+                    <a href="@(routes.Application.accomodation())#check-in-out" class="btn btn-default">@Messages("util.more-info")</a>
+                </div>
+            </div>
+        }
+        </div>
 
-<div class="col-sm-4 box">
-	<h3>@Messages("price.today")</h3>
-	<span></span>
+        <div class="col-sm-4 box">
+            <h3>@Messages("price.today")</h3>
+            <span></span>
 
-	<div class="row">
-		<div class="col-xs-12">
-			@Messages("price.intro-brief")
-				@defining(new MonthDay()){today =>
-			<ul>
-				<li class="col-xs-12">
-					@Messages("room.lake-view")
-					<small class="pull-right">
-						@UtilObject.format(PriceObject.map(RoomType.double)(RoomView.mountainView) (Treatment.bb) (today))
-					</small>
-				</li>
-				<li class="col-xs-12">
-					@Messages("room.mountain-view")
-					<small class="pull-right">
-						@UtilObject.format(PriceObject.map(RoomType.triple)(RoomView.mountainView) (Treatment.bb)(today))
-					</small>
-				</li>
-				<li class="col-xs-12">
-					@Messages("room.suite")
-					<small class="pull-right">
-						@UtilObject.format(PriceObject.map(RoomType.quad)(RoomView.mountainView) (Treatment.bb)(today))
-					</small>
-				</li>
-				<li class="col-xs-12">
-					@Messages("room.single")
-					<small class="pull-right">
-						@UtilObject.format(PriceObject.map(RoomType.single)(RoomView.mountainView) (Treatment.bb)(today))
-					</small>
-				</li>
-			</ul>
-			}
-		</div>
-	</div>
-	<div class="row margined">
-		<div class="col-xs-4">
-			<a href="@(routes.Application.accomodation)#prices" class="btn btn-default">@Messages("util.more-info")</a>
-		</div>
-	</div>
-</div>
+            <div class="row">
+                <div class="col-xs-12">
+                    @Messages("price.intro-brief")
+                    @defining(new MonthDay()) { today =>
+                        <ul>
+                            <li class="col-xs-12">
+                                @Messages("room.single")
+                            <small class="pull-right">
+                            @UtilObject.format(PriceObject.map(RoomType.single)(RoomView.mountainView)(Treatment.bb)(today))
+                            </small>
+                            </li>
+                            <li class="col-xs-12">
+                                @Messages("room.double")
+                                <small class="pull-right">
+                                @UtilObject.format(PriceObject.map(RoomType.double)(RoomView.mountainView)(Treatment.bb)(today))
+                                </small>
+                            </li>
+                            <li class="col-xs-12">
+                                @Messages("room.triple")
+                                <small class="pull-right">
+                                @UtilObject.format(PriceObject.map(RoomType.triple)(RoomView.mountainView)(Treatment.bb)(today))
+                                </small>
+                            </li>
+                            <li class="col-xs-12">
+                                @Messages("room.quad")
+                                <small class="pull-right">
+                                @UtilObject.format(PriceObject.map(RoomType.quad)(RoomView.mountainView)(Treatment.bb)(today))
+                                </small>
+                            </li>
+                        </ul>
+                    }
+                </div>
+            </div>
+            <div class="row margined">
+                <div class="col-xs-4">
+                    <a href="@(routes.Application.accomodation)#prices" class="btn btn-default">@Messages("util.more-info")</a>
+                </div>
+            </div>
+        </div>
 
-<div class="col-sm-4 box">
-	<h3>@Messages("home.services-short-title")</h3>
-	<span></span>
+        <div class="col-sm-4 box">
+            <h3>@Messages("home.services-short-title")</h3>
+            <span></span>
 
-	<ul>
-		<li>
-			<img src="@routes.Assets.versioned("images/wifi.png")">@Messages("home.services-short-wifi")</li>
-		<li>
-			<img src="@routes.Assets.versioned("images/swimming.png")">@Messages("home.services-short-spa")</li>
-		<li>
-			<img src="@routes.Assets.versioned("images/car.png")">@Messages("home.services-short-parking")</li>
-		<li>
-			<img src="@routes.Assets.versioned("images/center.png")">@Messages("home.services-short-downtown")</li>
-		<li>
-			<img src="@routes.Assets.versioned("images/restaurant.png")">@Messages("home.services-short-restaurant-bar")</li>
-	</ul>
-	<div class="row margined">
-		<div class="col-xs-4">
-			<a href="@routes.Application.services" class="btn btn-default">@Messages("util.more-info")</a>
-		</div>
-	</div>
+            <ul>
+                <li>
+                    <img src="@routes.Assets.versioned("images/wifi.png")">@Messages("home.services-short-wifi")</li>
+                <li>
+                    <img src="@routes.Assets.versioned("images/swimming.png")">@Messages("home.services-short-spa")</li>
+                <li>
+                    <img src="@routes.Assets.versioned("images/car.png")">@Messages("home.services-short-parking")</li>
+                <li>
+                    <img src="@routes.Assets.versioned("images/center.png")">@Messages("home.services-short-downtown")</li>
+                <li>
+                    <img src="@routes.Assets.versioned("images/restaurant.png")">@Messages("home.services-short-restaurant-bar")</li>
+            </ul>
+            <div class="row margined">
+                <div class="col-xs-4">
+                    <a href="@routes.Application.services" class="btn btn-default">@Messages("util.more-info")</a>
+                </div>
+            </div>
 
-</div>
+        </div>
 
-</div>
+    </div>
 }

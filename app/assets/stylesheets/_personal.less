@@ -431,6 +431,44 @@ hr{
 	}
 }
 
+.price-holder{
+	width: 100%;
+	& > tbody > tr {
+		/*&:nth-child(2){
+			border-top: 1px solid @light-gray;
+		}*/
+		&:hover{
+			background-color: lighten(@light-orange, 35%);
+		}
+		& > td{
+			width: 16.65%;
+			:nth-child(3){
+				color: @light-brown;
+			}
+			:nth-child(5){
+				color: @light-orange;
+			}
+		}
+	}
+	
+}
+
+.leg{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+}
+.fb{
+	background-color: @dark-gray;
+}
+.hb{
+	background-color: @light-brown;
+}
+.bb{
+	background-color: @light-orange;
+}
+
+
 
 
 
