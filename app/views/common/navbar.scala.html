@@ -1,6 +1,5 @@
 @()(implicit lang: Lang)
 
-@import play.api.i18n._
 <div class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -43,7 +42,7 @@
                 </a>
             </li>
             <li>
-                <a href="@routes.Application.showForm">
+                <a target="_blank" href="@BookingLinkHandler.getLinkWithLang">
                 <span>@Messages("util.book-now")</span>
                 <small class="sub-heading hidden-xs">
                     @Messages("util.get-discount")
