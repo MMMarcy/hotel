@@ -46,7 +46,7 @@ accomodation.check-in=Check-in is performed from 10.00 to 21.00 in summer and fr
 accomodation.check-out-title=Check-out
 accomodation.check-out=Check-out is performed strictly before 10.00. This choice is made for allowing our next guests to find a clean and tidy room. The late check-out fee is 10€ per person. For special cases, e.g. special needs persons, this rule can be bended, but we would like you to communicate these information beforehand through email, phone, or the special needs box offered while booking.
 accomodation.timetables-title=Timetables
-accomodation.timetables=The hotel is open from 07.00 until 00.00 in summer and from 07.00 until 18.00 in winter. Breakfast is served from 07.30 to 10.30. Launch is available from 11.30 to 14.00. Dinner from 18.30 until 19.30; where live music is programmed dinner is served from 18.30 until 19.00.
+accomodation.timetables=The hotel is open from 07.00 until 00.00 in summer and from 07.00 until 18.00 in winter. Breakfast is served from 07.30 to 10.30 and lunch from 11.30 to 14.00. Dinner from 18.30 until 19.30, however when live music is programmed it is served in the internal dining hall.
 accomodation.legend=Legend
 
 #CONTACTS ----------------
@@ -88,16 +88,16 @@ prices.supplement=Supplement for room upgrade (1 person in double room)
 facilities=Our facilities
 
 bar=Cocktail bar
-bar.desc=Our lake front American Bar offers an amazing atmosphere thank to our friendly staff and the beauty of the surroundings. Furthermore, we offer a big variety of wines, cocktails and beers that can make the time even more enjoyable. During the summer period the American singer Rod Olson is going to perform live to revive with you masterpieces that have define music''s history. During the exhibithions dinner for Hotel guests will be served in the dining room.
+bar.desc=Our lake front American Bar offers an amazing atmosphere thank to our friendly staff and the beauty of the surroundings. Furthermore, we offer a big variety of wines, cocktails and beers that can make the time even more enjoyable. During the summer period our singers are going to perform live to revive masterpieces that have defined music''s history. During the exhibithions dinner for Hotel guests will be served in the dining room.
 
 restaurant=Restaurant
-restaurant.desc=Our Restaurant offers a big variety of Italian Homemade food that varies from the Pizza to Lake fish dinners. We offer menus for children that include Milanese cutlet with french fries. Hotel guests that will dine in our Restaurant regardless of their board plan will access a {0}% discount.
+restaurant.desc=Our Restaurant offers a big variety of Italian Homemade food that varies from the Pizza to Lake fish dinners. We offer menus for children that include Milanese cutlet with french fries. Hotel guests that will dine in our Restaurant regardless of their board plan will access a {0}% discount if properly comunicated to out staff.
 
 gardacqua.association=SPA association
 gardacqua.short=Hotel Ancora is a proud partner of Gardacqua, a luxury SPA center situated in the hills of Garda. It offers 4 Swimming pools, 6 different kinds of sauna, a gym and soccer and beach-volley playgrounds. Hotel guests that decide to stay for more that 2 nights have access to free entrance tickets, while the others can obtain tickets at the reception for highly reduced rates.
 
 parking.label=Custodied parking
-parking.description=At the Hotel Ancora we understand how important is the safety of our guests'' cars. For this reason we decide to rent some parking slots in a custodied parking that is only about 500 meters away from the Hotel. However, at arrival and departure times our guests are allowed to acces the parking spots reserved for these purposes that are only 20 meters away from the Hotel. This way heavy luggages won''t be a poblem.
+parking.description=At the Hotel Ancora we understand how important is the safety of our guests'' cars. For this reason we decide to rent some parking slots in a custodied parking that is only about 900 meters away from the Hotel. However, at arrival and departure times our guests are allowed to acces the parking spots reserved for these purposes that are only 20 meters away from the Hotel. This way heavy luggages won''t be a poblem.
 
 #MAIL & PRENOTATION FORM
 form.first-name=First Name
@@ -160,15 +160,19 @@ room.our-rooms=Our Rooms
 room.description=Room Description
 
 room.single=Single room
+room.single-with-number=Single room ({0} adult)
 room.single-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
 room.double=Double Room
+room.double-with-number=Double Room ({0} adults)
 room.double-desc=Our spacious double rooms offer the perfect place for spending quality time with your partner. They offer all the facilities availble to the other rooms while offering a majestic view of Garda or the Lake. The ones facing the lake also include a balcony, from which you can enjoy the amazing atmosphere that only Garda can offer. Finally, beds can be detached on request.
 
 room.triple=Triple Room
+room.triple-with-number=Triple Room ({0} adults)
 room.triple-desc=Our triple room is located on the top floor of our Hotel. Its guests can enjoy a breathtaking 360 degrees view of the Lake and Garda. The room, as it is possible to see through the gallery, has a private terrace of about 10 square meters in which is possible to tan, dine, etc. in complete privacy. The suite contains three bed arrenged in a  2 plus 1 configuration, but can be easily arrenged on a  1 plus 1 plus 1 configuration on request.
 
 room.quad=Quadruple Room
+room.quad-with-number=Quadruple Room ({0} adults)
 room.quad-desc=Our quadruple room consists of two separated double rooms, connected through a small corridor. One of these rooms leads to a balcony, in which all the family can enjoy our lovely weather and the magnific atmosphere that Garda and the lake offer.
 
 

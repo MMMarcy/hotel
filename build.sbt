@@ -2,7 +2,7 @@ name := "hotel"
 
 version := "1.0-SNAPSHOT"
 
-scalaVersion := "2.11.4"
+scalaVersion := "2.11.5"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 

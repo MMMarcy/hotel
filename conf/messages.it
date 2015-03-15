@@ -40,16 +40,16 @@ home.widget-2-title=Mappa del sito
 #ACCOMODATION -----------
 accomodation.title=Camere e prezzi
 accomodation.special-offer-title=Offerta speciale
-accomodation.special-offer=Ogni prenotazione più lunga di {0} notti può ottenere uno sconto opzionale del {1}% sul przzo finale (bevande escluse). Tuttavia, una prenotazione che gode di questa offerta NON è rimborsabile. Per ulteriori informazioni la preghiamo di contattare il nostro staff via email o telefono.
+accomodation.special-offer=Ogni prenotazione più lunga di {0} notti può ottenere uno sconto opzionale del {1}% sul prezzo finale (bevande escluse). Tuttavia, una prenotazione che gode di questa offerta NON è rimborsabile. Per ulteriori informazioni la preghiamo di contattare il nostro staff via email o telefono.
 accomodation.rules=Le nostre regole
 accomodation.check-in-title=Check-in
 accomodation.check-in=Il Check-in è effettuato dalle 10.00 alle 21.00 nel periodo estivo e dalle 10.00 alle 17.00 in quello invernale. Tuttavia, previa comunicazione questi orari possono essere estesi. Le chiavi delle camere sono consegnate approssimativamente alle 12.00 del giorno di arrivo, in modo che possiate trovare una camera pulita e in ordine.
 
 accomodation.check-out-title=Check-out
-accomodation.check-out=Il check-out è effettuato tassativamente prima delle 10.00 del giorno di partenza. Questa scelta è atta a far trovare agli altri nostri ospiti una camera pulita e in ordine. Tuttavia, per esigenze speciali, queste regole possono essere leggermente modificate, ma vi chiediamo di comunicarcelo in anticipo. Non attenersi a questa regola comporta un supplemento di 10,00€ per per persona.
+accomodation.check-out=Il check-out è effettuato tassativamente prima delle 10.00 del giorno di partenza. Questa scelta è atta a far trovare agli altri nostri ospiti una camera pulita e in ordine. Non attenersi a questa regola comporta un supplemento di 10,00€ per per persona.
 
 accomodation.timetables-title=Orari
-accomodation.timetables=L''Hotel apre dalle 07.00 fino alle 00.00 in estate e fino alle 18.00 in inverno. La colazione è servita dalle 7.30 alle 10.30. Pranzo e cena, qualora usufruiate del trattamento di mezza o completa pensione, sono serviti, rispettivamente, dalle 11.30 alle 14.00 e dalle 18.30 alle 19.30. Tuttavia, nelle serate di musica dal vivo la cena è servita dalle ore 18.30 alle ore 19.00.
+accomodation.timetables=L''Hotel apre dalle 07.00 fino alle 00.00 in estate e fino alle 18.00 in inverno. La colazione è servita dalle 7.30 alle 10.30. Pranzo e cena, qualora usufruiate del trattamento di mezza o completa pensione, sono serviti, rispettivamente, dalle 11.30 alle 14.00 e dalle 18.30 alle 19.30. Tuttavia, nelle serate di musica dal vivo la cena è servita nella sala interna.
 accomodation.legend=Legenda
 
 
@@ -136,10 +136,10 @@ price.modal-accept=Si grazie, desidero usufruire dello sconto.
 facilities=Le nostre strutture
 
 bar= Il nostro Bar
-bar.desc=La terrazza del nostro bar è direttamente affacciata sul lago. Alcuni tavoli sono posti a circa 3 metri da esso, creando la giusta atmosfera per godersi il proprio drink immerso nella bellezza paesaggistica che il Lago offre. Inoltre, il nostro cordiale staff saprà consigliarvi al meglio su quali sono i nostri vini migliori, birre e cocktails. Infine, nel periodo estivo il cantante Americano Rod Olson allieterà le vostre serate con interpretazioni di brani che hanno fatto la storia della musica.
+bar.desc=La terrazza del nostro bar è direttamente affacciata sul lago. Alcuni tavoli sono posti a circa 3 metri da esso, creando la giusta atmosfera per godersi il proprio drink immerso nella bellezza paesaggistica che il Lago offre. Inoltre, il nostro cordiale staff saprà consigliarvi al meglio su quali sono i nostri vini migliori, birre e cocktails. Infine, nel periodo estivo i nostri cantanti allieteranno le vostre serate con interpretazioni di brani che hanno fatto la storia della musica.
 
 restaurant=Il nostro ristorante
-restaurant.desc=Anche il nostro ristorante, come il bar, è affacciato sul Lago. Il nostro menù include solamente piatti freschi che spaziano da un''ampia scelta di pizze fino ai più prelibati pesci lacustri. Sono presenti anche piatti adatti ai  clienti più giovani. I clienti dell''hotel che non usufruiscono di pernottamenti di mezza pensione o pensione completa hanno accesso al {0}% di sconto qualora decidano di pranzare o cenare nel nostro ristorante.
+restaurant.desc=Anche il nostro ristorante, come il bar, è affacciato sul Lago. Il nostro menù include solamente piatti freschi che spaziano da un''ampia scelta di pizze fino ai più prelibati pesci lacustri. Sono presenti anche piatti adatti ai  clienti più giovani. I clienti dell''hotel che non usufruiscono di pernottamenti di mezza pensione o pensione completa hanno accesso al {0}% di sconto qualora decidano di pranzare o cenare nel nostro ristorante, previa comunicazione al personale.
 
 
 gardacqua.association=Gardacqua SPA
@@ -147,7 +147,7 @@ gardacqua.short=A partire da Marzo 2015 il nostro Hotel diventerà partner della
 
 
 parking.label=Parcheggio custodito
-parking.description=Lo staff del nostro hotel è consapevole dell''importanza della sicurezza delle macchine dei nostri clienti. Per questa ragione abbiamo deciso di affittare un parcheggio custodito (24 ore su 24) in modo da garantire un soggiorno spensiarato. Esso è collocato a circa 500m dall''hotel. Tuttavia, per il carico e lo scarico dei bagagli è disponibile un parcheggio temporaneo distante appena 30m dall''hotel. In questo modo i bagagli pesanti non saranno più un problema.
+parking.description=Lo staff del nostro hotel è consapevole dell''importanza della sicurezza delle macchine dei nostri clienti. Per questa ragione abbiamo deciso di affittare un parcheggio custodito (24 ore su 24) in modo da garantire un soggiorno spensiarato. Esso è collocato a circa 900m dall''hotel. Tuttavia, per il carico e lo scarico dei bagagli è disponibile un parcheggio temporaneo distante appena 30m dall''hotel. In questo modo i bagagli pesanti non saranno più un problema.
 
 
 #BOOKING PANEL ----------
@@ -155,7 +155,7 @@ price.from=A partire da
 price.per-night-per-person=per notte con colazione
 
 #ROOMS FACILITIES ------
-room.facilities=Servizi della camere
+room.facilities=Servizi della camera
 room.privete-bathroom=Bagno privato
 room.television=Televisione satellitare
 room.air-conditioning=Aria condizionata
@@ -168,15 +168,19 @@ room.our-rooms=Le nostre camere
 room.description=Descrizione
 
 room.single=Camera singola
+room.single-with-number=Camera singola ({0} adulto)
 room.single-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
 room.double=Camera doppia
-room.double-desc=le nostre spaziose camere doppie sono la scelta perfetta per rilassarsi col proprio partner. Offrono tutti gli accessori disponibili alle altre camere. Inoltre, le camere affacciate sul lago dispongono di un balcone da cui è possibile ammirare il lago mentre si è immersi nell'atmosfera tipica di Garda. Infine, vogliamo ricordare che su richiesta è possibile separare i letti.
+room.double-with-number=Camera doppia ({0} adulti)
+room.double-desc=Le nostre camere doppie sono la scelta perfetta per rilassarsi col proprio partner. Offrono tutti gli accessori disponibili nelle altre camere. Infine, vogliamo ricordare che su richiesta è possibile separare i letti.
 
 room.triple=Camera tripla
-room.triple-desc=La nostra camera tripla è situata all'ultimo piano del nostro Hotel. Gli ospiti hanno accesso ad una terrazza privata di circa 10 metri quadrati da cui si ha una vista a quasi 360 gradi del lago e dell'entroterra Gardesano. La camera mette a disposizione tre letti con disposizione 2 + 1, ma su richiesta è possibile avere tre letti singoli divisi.
+room.triple-with-number=Camera tripla ({0} adulti)
+room.triple-desc=La nostra camera tripla è situata all'ultimo piano del nostro Hotel. Gli ospiti hanno accesso ad una terrazza privata di circa 10 metri quadrati da cui si ha una vista a quasi 360 gradi del lago e dell'entroterra Gardesano. La camera mette a disposizione tre letti con disposizione 2 + 1, ma su richiesta è possibile avere tre letti singoli.
 
 room.quad=Camera quadrupla
+room.quad-with-number=Camera quadrupla ({0} adulti)
 room.quad-desc=la nostra camera quadrupla mette a disposizione 2 camere doppie. Questa configurazione è perfetta per famiglie in quanto i genitori possono rilassarsi mentre i più piccoli fanno altro. Una delle due camere ha accesso ad un balcone da cui è possibile ammirare il lago o semplicemente godersi l'atmosfera.
 
 

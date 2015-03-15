@@ -96,7 +96,7 @@
 </div>
 <div class="row">
     <div class="col-xs-12 box">
-        <h3>@Messages("room.single")</h3>
+        <h3>@Messages("room.single-with-number", 1)</h3>
         <span></span>
     </div>
     <div class="col-xs-12">
@@ -104,21 +104,21 @@
     </div>
 
     <div class="col-xs-12 box">
-        <h3>@Messages("room.double")</h3>
+        <h3>@Messages("room.double-with-number", 2)</h3>
         <span></span>
     </div>
     <div class="col-xs-12">
         @Html(PriceObject.printTable(RoomType.double)( RoomView.lakeView, RoomView.mountainView))
     </div>
     <div class="col-xs-12 box">
-        <h3>@Messages("room.triple")</h3>
+        <h3>@Messages("room.triple-with-number", 3)</h3>
         <span></span>
     </div>
     <div class="col-xs-12">
         @Html(PriceObject.printTable(RoomType.double)( RoomView.lakeView))
     </div>
     <div class="col-xs-12 box">
-        <h3>@Messages("room.quad")</h3>
+        <h3>@Messages("room.quad-with-number", 4)</h3>
         <span></span>
     </div>
     <div class="col-xs-12">
