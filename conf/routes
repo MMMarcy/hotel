@@ -11,6 +11,7 @@ GET		/room/:roomType				controllers.Application.showRoom(roomType)
 GET		/aroundus					controllers.Application.aroundUs
 GET		/contacts					controllers.Application.contacts
 GET		/booking					controllers.Application.showForm
+GET		/acceptCookies				controllers.Application.acceptCookies
 POST	/prenotation				controllers.Application.sendEmail
 
 # Map static resources from the /public folder to the /assets URL path

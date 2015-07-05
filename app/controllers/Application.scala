@@ -32,27 +32,27 @@ object Application extends Controller {
   }
 
   def index = Action { implicit request =>
-    Ok(views.html.pages.index())
+    Ok(views.html.pages.index(isAcceptedCookiePresent))
   }
 
   def accomodation = Action { implicit request =>
-    Ok(views.html.pages.accomodation())
+    Ok(views.html.pages.accomodation(isAcceptedCookiePresent))
   }
 
   def services = Action { implicit request =>
-    Ok(views.html.pages.services())
+    Ok(views.html.pages.services(isAcceptedCookiePresent))
   }
 
   def showRoom(roomType: String) = Action { implicit request =>
-    Ok(views.html.pages.room(UtilObject.stringToRoomType(roomType.toLowerCase)))
+    Ok(views.html.pages.room(UtilObject.stringToRoomType(roomType.toLowerCase),isAcceptedCookiePresent))
   }
 
   def aroundUs = Action { implicit request =>
-    Ok(views.html.pages.aroundus())
+    Ok(views.html.pages.aroundus(isAcceptedCookiePresent))
   }
 
   def contacts = Action { implicit request =>
-    Ok(views.html.pages.contacts())
+    Ok(views.html.pages.contacts(isAcceptedCookiePresent))
   }
 
   def sendEmail = Action { implicit request =>
@@ -74,6 +74,14 @@ object Application extends Controller {
   def language(code: String) = Action { implicit request =>
     Redirect(request.headers.get(REFERER).getOrElse("/"))
       .withLang(Lang(code))
+  }
+
+  def acceptCookies = Action {implicit request => 
+    Ok("").withCookies(Cookie("cookieAccepted", ""))
+  }
+
+  protected def isAcceptedCookiePresent(implicit request: Request[AnyContent]): Boolean = {
+    request.cookies.get("cookieAccepted").isDefined
   }
 
 }
