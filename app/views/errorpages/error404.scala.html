@@ -1,7 +1,7 @@
 @(path: String)(implicit lang: Lang)
 @import play.api.i18n._
 
-@main(Messages("surroundings.title")) {
+@main(Messages("surroundings.title"), isCookieAccepted = true) {
 
 @common.landscape()
 

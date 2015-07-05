@@ -5,7 +5,7 @@
 @import models._
 @import play.api.Logger
 
-@main(Messages("home.title")) {
+@main(Messages("home.title"),isCookieAccepted) {
     <div class="row">
     @common.carousel(
         (routes.Assets.versioned("images/hotel-slide-1.jpg").url, Messages("home.caption1")),
