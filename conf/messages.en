@@ -202,7 +202,7 @@ surroundings.caneva=Caneva
 surroundings.caneva-desc=The Verona''s shore of the Lake houses one of the biggest water parks in Europe. The name of this place is CanevaWorld and contains attraction for all the family, even the younger members. It is situated 15Km south of Garda and it is easy to reach. For more information click on the button below.
 
 surroundings.gardaland=Gardaland
-surroundings.gardaland-desc=The area has also a traditional amousement park that is one of the bigget in Italy. Gardaland it''s the perfect place for spending amazing day all together and have a lot of fun. Timetables and prices are available at gardaland official website which is accessible through the following link.
+surroundings.gardaland-desc=The area has also a traditional amusement park that is one of the biggest in Italy. Gardaland it''s the perfect place for spending amazing day all together and have a lot of fun. Timetables and prices are available at gardaland official website which is accessible through the following link.
 
 surroundings.zoo=Parco Natura Viva
 surroundings.zoo-desc=Another interesting option for the whole family is the Parco Natura Viva. It is both a traditional zoo and it also offers the opportunity to simulate a safari with youor own car. The experience of being so close to the animals is really thrilling, especially for the younger ones. For more info click the button below.
@@ -228,6 +228,10 @@ util.book-now=Book now
 util.more-info=More info
 util.get-discount=It's easy
 
+
+#COOKIES ---------------
+cookies.title=Hotel Ancora uses cookies
+cookies.body=Cookies are unique identifiers that we transfer to your device to enable our systems to recognise your language settings and if it is the first time you visit our website.<br>By scrolling down or continuing visiting our website in any other manner you accept the conditions. For a more thorough description please follow <a href={0}>this link</a>.
 
 
 

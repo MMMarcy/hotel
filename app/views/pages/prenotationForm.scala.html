@@ -13,7 +13,7 @@
 }
 
 
-@main(Messages("home.title"), isCookieAccepted = false) {
+@main(Messages("home.title"), isSessionEmpty = false) {
 
     @form(action = routes.Application.sendEmail) {
         <div class="box">

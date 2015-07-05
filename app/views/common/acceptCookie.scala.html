@@ -1,5 +1,9 @@
 @()(implicit lang: Lang)
 
-<div>
+@import play.api.i18n._
 
+<div class="cookies-display row">
+    <h2>@Messages("cookies.title")</h2>
+
+    <span>@Html(Messages("cookies.body", "TODO: insert page with complete cookie description"))</span>
 </div>

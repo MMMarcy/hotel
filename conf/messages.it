@@ -244,6 +244,8 @@ util.more-info=Maggiori informazioni
 util.get-discount=È facile
 
 
-
+#COOKIES ---------------
+cookies.title=Questo sito usa i cookies
+cookies.body= I cookies sono identificatori unici che il sito trasferisce sul vostro dispositivo per ricordarsi alcune informazioni. Specificamente, la lingua in cui il sito viene visualizzato e se è la prima volta che visitate il nostro sito. Per ottenere ulteriori informazioni riguardo la tecnologia dei cookies vi preghiamo di aprire <a href={0}>questo link</a>.<br> Continuando a visualizzare il sito, o scorrendo la pagina in basso l'uso dei cookies viene accettato.
 
 
